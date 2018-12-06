@@ -1,0 +1,63 @@
+<view class='all'>
+
+
+  <view class='top_text'>
+    {{ContentOne}}
+  </view>
+
+  <view class='swiper_item_1_1'>
+    <text class='swiper_item_1_text'>{{ContentTwo}}：</text>
+    <view class='middle-css-view2-view placeholder-class'>
+      <picker mode="region" bindchange="bindRegionChange" value="{{CityAddress}}" custom-item="{{customItem}}">
+        <view>
+          {{CityAddress[0]}} {{CityAddress[1]}} {{CityAddress[2]}}
+        </view>
+      </picker>
+    </view>
+  </view>
+
+  <view class='swiper_item_1_1'>
+    <text class='swiper_item_1_text'>详细地址：</text>
+    <input class='swiper_item_1_input' value='{{addre}}' maxlength='18' placeholder='请输入详细地址' placeholder-class='placeholder-class' bindinput='addreInput'></input>
+  </view>
+
+  <view class='swiper_item_1_1'>
+    <text class='swiper_item_1_text'>联系电话：</text>
+    <input class='swiper_item_1_input' value='{{Phone}}' maxlength='18' placeholder=' 请输入联系方式' placeholder-class='placeholder-class' bindinput='PhoneInput'></input>
+  </view>
+
+
+  <view class='swiper_item_1_1'>
+    <text class='swiper_item_1_text'>联系人：</text>
+    <input class='swiper_item_1_input' value='{{Name}}' maxlength='10' placeholder='请输入联系人' placeholder-class='placeholder-class' bindinput='NameInput'></input>
+  </view>
+
+
+
+  <view class='swiper_item_1_1'>
+    <text class='swiper_item_1_text'>预约服务时间：</text>
+    <view class='middle-css-view2-view placeholder-class'>
+      <picker mode="date" value="{{date}}" start="2018-11-16" end="2027-09-01" bindchange="bindDateChange">
+        <view>
+          {{date}}
+        </view>
+      </picker>
+    </view>
+  </view>
+
+  <view class='swiper_item_1_1_bottom'>
+
+    <!-- <input  value='{{Phone}}'  placeholder-class='placeholder-class' bindinput='PhoneInput'></input> -->
+    <textarea class='swiper_item_1_input_bottom' value='{{details}}' bindinput='detailsInput' placeholder='请输入设备故障原因'></textarea>
+  </view>
+
+
+
+
+  <view class='bottom_btn'>
+    <button class='bottom_btn_btn' bindtap='SubmissionBtn'>提交申请</button>
+  </view>
+
+
+
+</view>

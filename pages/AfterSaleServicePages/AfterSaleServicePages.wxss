@@ -1,0 +1,135 @@
+.all {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*/
+  background-size: 100% 100%;
+  background: #fff;
+}
+
+.top_css {
+  width: 100%;
+  height: 30%;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  background-size: 100% 100%;
+}
+
+.middle_css {
+  width: 100%;
+  height: 30%;
+  /* background: forestgreen; */
+}
+
+.bottom_css {
+  width: 100%;
+  height: 40%;
+  /* background: darkmagenta; */
+  display: flex;
+  flex-direction: row;
+  /*align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.top_css_text {
+  font-size: 35rpx;
+  color: #fff;
+}
+
+.top_css_view1 {
+  margin-top: 15rpx;
+  color: #fff;
+}
+
+.top_css_view1_text {
+  font-size: 50rpx;
+}
+
+.middle_css_view1 {
+  width: 100%;
+  height: 32%;
+  /* background: darkgoldenrod; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  border-bottom: 1rpx solid #ccc;
+}
+
+.middle_css_img {
+  width: 60rpx;
+  height: 60rpx;
+  margin-right: 15rpx;
+}
+
+.middle_css_view1_view1 {
+  width: 15%;
+  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: flex-end; /*水平居中*/
+}
+
+.middle_css_view1_view2 {
+  width: 30%;
+  /* background: darkcyan; */
+}
+
+.middle_css_view1_view3 {
+  width: 55%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: flex-end; /*水平居中*/
+}
+
+.middle_css_view1_view3_text {
+  font-size: 35rpx;
+  margin-right: 15rpx;
+  color: #ccc;
+}
+
+.bottom_css_allview {
+  width: 100%;
+  height: 30%;
+  /* background: darkmagenta; */
+  display: flex;
+  flex-direction: row;
+  margin-top: 25rpx;
+  /*align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  border-bottom: 1rpx solid #ccc;
+}
+
+.bottom_css_view1 {
+  width: 33%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  
+}
+.xian{
+  width: 1rpx;
+  height: 80%;
+  background: #ccc;
+}
+
+.xian1{
+  width: 1rpx;
+  height: 80%;
+  background: #ccc;
+}
+.text_color {
+  font-size: 30rpx;
+}
+.text_font_size{
+  font-size: 30rpx;
+}

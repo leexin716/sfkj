@@ -1,0 +1,227 @@
+<view class="login">
+
+  <view class='middle-css'>
+    <view class='middle-css-view1'>
+      <view class='xiancss1'></view>
+      <text class="top_text1_css {{currentTab==0 ? 'on' : 'nono'}}" bindtap='swichTap' data-current="0">钱包余额</text>
+      <view class='xiancss'></view>
+      <text class="top_text2_css {{currentTab==1 ? 'on' : 'nono'}}" bindtap='swichTap' data-current="1">代理押金</text>
+      <view class='xiancss'></view>
+      <text class="top_text3_css {{currentTab==2 ? 'on' : 'nono'}}" bindtap='swichTap' data-current="2">设备押金</text>
+      <view class='xiancss1'></view>
+    </view>
+  </view>
+
+  <view class='bottom-css'>
+    <swiper class='bottom-css-swiper' current="{{currentTab}}" autoplay="{{false}}" duration="300" bindchange="bindChange">
+
+
+      <!-- 钱包余额 -->
+      <swiper-item class="swiper-item1_allcss">
+
+        <view class='swiper-item_1_top'>
+
+          <view class='swiper-item_1_toptext1'>
+            <text class='swiper-item_1_toptext1_text'>可提现余额 (元)</text>
+          </view>
+
+          <view class='swiper-item_1_toptext2 allcolor'>
+            <text space='ensp'>15085.00 元</text>
+          </view>
+
+          <view class='swiper-item_1_toptext3'>
+            <text class='swiper-item_1_toptext3_text' bindtap='GoToPurseDetail'>
+           钱包明细 》
+          </text>
+          </view>
+
+        </view>
+
+
+        <view class='swiper-item_1_middle'>
+        </view>
+
+
+
+        <view class='swiper-item_1_bottom'>
+
+          <view class='swiper-item_1_bottom_view1'>
+
+            <view class='swiper-item_1_bottom_view1_view1'>
+              <view class='swiper-item_1_bottom_view1_view1_1' bindtap='GoToTixianDetails'>
+                <text>提现明细 (元)</text>
+                <text class='allcolor'>5000.00</text>
+              </view>
+              <!-- <view class='swiper-item_1_bottom_view1_view1_1'>
+                <text>已结佣金</text>
+                <text>333.00</text>
+              </view> -->
+            </view>
+
+
+
+            <view class='swiper-item_1_bottom_view1_view2'>
+              <view class='swiper-item_1_bottom_view1_view1_1'>
+                <text>充值明细 (元)</text>
+                <text class='allcolor'>22.00</text>
+              </view>
+              <!-- <view class='swiper-item_1_bottom_view1_view1_1'>
+                <text>未结佣金</text>
+                <text>221.00</text>
+              </view> -->
+            </view>
+
+          </view>
+
+
+          <view class='swiper-item_1_bottom_view2'>
+
+
+            <view class='swiper-item_1_bottom_view2_button-view'>
+              <button class='swiper-item_1_bottom_view2_button'>提现</button>
+            </view>
+
+
+            <text class='swiper-item_1_bottom_view2_button1'>佣金提现明细 》</text>
+          </view>
+
+
+
+
+
+        </view>
+      </swiper-item>
+
+
+      <!--  代理押金 -->
+
+      <swiper-item>
+        <scroll-view scroll-y class='scroll-view-y' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+
+          <view class='container_view'>
+            <view class='view_left'>
+              <view class='view_left_top'>
+                <text class='view_left_top_text'>订单编号： 2018010815361225</text>
+              </view>
+              <view class='view_left_bottom'>
+                <text class='view_left_top_text'>订单时间： 2018-01-15 13：55</text>
+              </view>
+            </view>
+            <view class='view_right'>
+              <view class='view_left_top'>
+                <text class='view_left_top_text'>代理押金</text>
+              </view>
+              <view class='view_left_bottom'>
+                <text class='view_left_top_text'>+1550</text>
+              </view>
+            </view>
+          </view>
+          <view class='container_view'>
+            <view class='view_left'>
+              <view class='view_left_top'>
+                <text class='view_left_top_text'>订单编号： 2018010815361225</text>
+              </view>
+              <view class='view_left_bottom'>
+                <text class='view_left_top_text'>订单时间： 2018-01-15 13：55</text>
+              </view>
+            </view>
+            <view class='view_right'>
+              <view class='view_left_top'>
+                <text class='view_left_top_text'>代理押金</text>
+              </view>
+              <view class='view_left_bottom'>
+                <text class='view_left_top_text'>+1550</text>
+              </view>
+            </view>
+          </view>
+        </scroll-view>
+
+      </swiper-item>
+
+
+      <!--  设备押金 -->
+      <swiper-item class="swiper-item1_allcss">
+        <view class='swiper-item_1_top'>
+
+          <view class='swiper-item_1_toptext1'>
+            <text class='swiper-item_1_toptext1_text'>押金金额 (元)</text>
+          </view>
+
+          <view class='swiper-item_1_toptext2 allcolor'>
+            <text space='ensp'>498.00 元</text>
+          </view>
+
+          <view class='swiper-item_1_toptext3'>
+            <text class='swiper-item_1_toptext3_text' bindtap='GoToDepositDetails'>
+           押金细则 》
+          </text>
+          </view>
+
+        </view>
+
+
+        <view class='swiper-item_1_middle'>
+        </view>
+
+
+
+        <view class='swiper-item_1_bottom'>
+
+          <view class='swiper-item_3_bottom_view1'>
+
+            <view class='swiper-item_3_bottom_view1_view1'>
+              <view class='swiper-item_1_bottom_view1_view1_1'>
+                <text>服务费 (元)</text>
+                <text class='allcolor'>5000.00</text>
+              </view>
+              <view class='swiper-item_1_bottom_view1_view1_1'>
+                <text>年使用费 (元)</text>
+                <text class='allcolor'>333.00</text>
+              </view>
+            </view>
+
+
+
+            <view class='swiper-item_3_bottom_view1_view2'>
+              <view class='swiper-item_1_bottom_view1_view1_1'>
+                <text>折旧费 (元)</text>
+                <text class='allcolor'>22.00</text>
+              </view>
+              <view class='swiper-item_1_bottom_view1_view1_1'>
+                <text>已交押金</text>
+                <text class='allcolor'>221.00</text>
+              </view>
+            </view>
+
+          </view>
+
+
+
+
+          <view class='swiper-item_1_bottom_view2_button-view'>
+            <text class='swiper-item_1_bottom_view2_button11'>押金事宜说明 》</text>
+          </view>
+
+
+
+
+
+
+
+
+        </view>
+      </swiper-item>
+
+
+
+    </swiper>
+
+
+
+
+
+
+  </view>
+
+
+</view>

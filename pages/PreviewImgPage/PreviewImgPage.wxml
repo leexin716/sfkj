@@ -1,0 +1,30 @@
+<view class='all'>
+  <view class='top'>
+    <image class='top_img' src='http://qrcode.waterever.cn/image/erweima_img1.png' />
+  </view>
+  <view class='middle'>
+
+  </view>
+  <view class='bottom'>
+
+    <view class='user_img_css'>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+    </view>
+
+    <view class='bottom_left'>
+      <text class='bottom_left_text1'>我是{{userInfo.nickName}}</text>
+      <text class='bottom_left_text2'>我为waterever代言</text>
+    </view>
+
+    <view class='bottom_right' bindtap='QrComdImgButton'>
+      <image class='bottom_right_img' mode="scaleToFill" src="{{imagePath}}" />
+    </view>
+  </view>
+
+
+  <view hidden="{{maskHidden}}" class="mask"></view>
+  <view class="canvas-box">
+    <canvas hidden="{{canvasHidden}}" style="width: 686rpx;height: 686rpx;background:#f1f1f1;" canvas-id="mycanvas" />
+  </view>
+
+</view>

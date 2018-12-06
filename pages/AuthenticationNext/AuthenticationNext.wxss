@@ -1,0 +1,328 @@
+.login {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: #358ecc; */
+  background-size: 100% 100%;
+  background: ghostwhite;
+}
+
+.middle-css {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center;
+  /* background: darkblue; *//* border-bottom: solid #333 1rpx; */
+}
+
+.middle-css-view1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center;
+}
+
+.text_1 {
+  width: 50%;
+  height: 100%;
+  background: #fff;
+  text-align: center;
+  /* border-right: solid #333 1rpx; */
+}
+
+.text_2 {
+  width: 50%;
+  height: 100%;
+  background: #fff;
+}
+
+.middle-css-view1-text1 {
+  width: 100%;
+  height: 100%;
+  margin-right: 13%;
+  color: #333;
+  font-size: 40rpx;
+  /* background: darkblue; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center;
+}
+
+.middle-css-view1-text2 {
+  width: 100%;
+  height: 100%;
+  margin-right: 13%;
+  color: #333;
+  font-size: 40rpx;
+  /* background: darkblue; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center;
+}
+
+.bottom-css {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+}
+
+.bottom-css-swiper {
+  width: 100%;
+  height: 100%;
+  /* background: red; */
+  margin-top: 35rpx;
+}
+
+.on {
+  color: #60b7e0;
+  border-bottom: 15rpx solid #60b7e0;
+}
+
+.nono {
+  color: #999;
+}
+
+.swiper_item_1 {
+  width: 100%;
+  height: 120rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  border-bottom: solid #ccc 1rpx;
+  border-top: solid #ccc 1rpx;
+  margin-top: 15rpx;
+}
+
+.swiper_item_1_1 {
+  width: 100%;
+  height: 120rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  border-bottom: solid #ccc 1rpx;
+}
+
+/*  输入框内默认文字样式 */
+
+.placeholder-class {
+  margin-top: 5rpx;
+  color: #bbb;
+  font-size: 30rpx;
+}
+
+.swiper_item_1_text {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  margin-top: 5rpx;
+  color: #aaa;
+  font-size: 30rpx;
+  /* background: red; */
+}
+
+.swiper_item_1_input {
+  height: 100%;
+  width: 70%;
+  font-size: 30rpx;
+  /* background: red; */
+}
+
+.swiper_item_1_input1 {
+  height: 100%;
+  width: 100%;
+  margin-left: 28rpx;
+  /* background: red; */
+}
+
+/*城市选择器view  */
+
+.middle-css-view2 {
+  border-bottom: 1rpx solid #ddd;
+  margin-top: 25rpx;
+  height: 16%;
+  width: 100%;
+  /* border: 1rpx solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*/
+  justify-content: center;
+  color: #666;
+}
+
+.middle-css-view2-text1 {
+  background: darkblue;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  margin-top: 5rpx;
+  color: #aaa;
+}
+
+.middle-css-view2-view {
+  height: 100%;
+  width: 70%;
+  margin-left: 15rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* justify-content: center; *//* background: red; */
+}
+
+.bottom_btn_css {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  /* background: red; */
+  margin-bottom: 200rpx;
+}
+
+.bottom_btn_next_css {
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fff;
+  color: #fff;
+  margin-top: 25rpx;
+  background: #60b7e0;
+}
+
+.bottom_btn_css_text {
+  color: #ccc;
+  font-size: 25rpx;
+  margin-left: 5%;
+}
+
+.swiper_item_2 {
+  width: 100%;
+  height: 80rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  border-bottom: solid #ccc 1rpx;
+  border-top: solid #ccc 1rpx;
+  margin-top: 15rpx;
+  /* background: red */
+}
+
+.swiper_item_2_text {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  margin-top: 5rpx;
+  color: #aaa;
+  font-size: 30rpx;
+  /* background: red; */
+}
+
+.swiper_item_2_input {
+  height: 100%;
+  width: 70%;
+  font-size: 30rpx;
+  /* background: red; */
+}
+
+.swiper_item_2_2 {
+  width: 100%;
+  height: 80rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  border-bottom: solid #ccc 1rpx;
+}
+
+.bottom_btn_css1 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  /* background: red; */
+  margin-bottom: 60rpx;
+}
+
+.bottom_btn_next_css::after {
+  border: none;
+}
+
+.picker_text_style {
+  font-size: 30rpx;
+}
+
+.over_img {
+  width: 40%;
+  height: 200rpx;
+  /* background: yellow; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.over_img_imgcss {
+  width: 200rpx;
+  height: 200rpx;
+  /* background: yellow; */
+  background-size: 100% 100%;
+}
+
+.yingyezhiz_view {
+  width: 60%;
+  height: 80rpx;
+  /* background: rebeccapurple; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+}
+
+.bottom_over_img {
+  width: 100%;
+  height: 240rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  /* background: red; */
+}
+
+.yingyezhiz {
+  font-size: 30rpx;
+  color: #bbb;
+  margin-left: 35rpx;
+}
+
+.yingyezhiz_btn {
+  height: 80rpx;
+  font-size: 30rpx;
+  line-height: 80rpx;
+  color: #fff;
+  background: #60b7e0;
+}

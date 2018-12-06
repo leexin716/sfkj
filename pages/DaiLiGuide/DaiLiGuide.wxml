@@ -1,0 +1,5 @@
+<view class='container'>
+
+
+  <image class="bjimgs-css" src="{{bjimgs}}"></image>
+</view>

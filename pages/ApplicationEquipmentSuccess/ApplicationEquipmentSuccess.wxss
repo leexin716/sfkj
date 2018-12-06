@@ -1,0 +1,80 @@
+.all {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: #358ecc; */
+  background-size: 100% 100%;
+  background: #eee;
+}
+
+.text1 {
+  margin-top: 30rpx;
+  font-size: 35rpx;
+  color: #bbb;
+}
+
+.text2 {
+  margin-top: 25rpx;
+  font-size: 50rpx;
+}
+
+.all_view1 {
+  width: 100%;
+  height: 120rpx;
+  margin-top: 80rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center;
+  font-size: 35rpx;
+  color: #bbb;
+}
+
+.all_view2 {
+  width: 90%;
+  height: 120rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  font-size: 35rpx;
+  color: #bbb;
+}
+
+.all_view1_text1 {
+  width: 30%;
+  height: 100%;
+  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+}
+
+.all_view1_text2 {
+  width: 70%;
+  height: 100%;
+  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: flex-end;
+}
+
+.over_button {
+  width: 100%;
+  height: 100rpx;
+  margin-top: 45rpx;
+  /* background: red; */
+}
+
+.over_buttons {
+  width: 80%;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #9bd0fa;
+  color: #fff;
+  border-radius: 5rpx;
+}

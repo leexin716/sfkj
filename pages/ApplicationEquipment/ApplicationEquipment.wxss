@@ -1,0 +1,205 @@
+.container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: #358ecc; */
+  background-size: 100% 100%;
+  background: #eee;
+}
+
+.top {
+  width: 100%;
+  height: 74%;
+  /* background: red; */
+  background-size: 100% 100%;
+}
+
+.middle {
+  width: 100%;
+  height: 18%;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: #358ecc; */
+}
+
+.middle_view1 {
+  width: 90%;
+  height: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-weight: 800;
+}
+
+.middle_view1_2 {
+  width: 90%;
+  height: 13%;
+  display: flex;
+  /* background: yellow; */
+  flex-direction: column;
+  font-size: 30rpx;
+}
+
+.middle_view1_4 {
+  width: 90%;
+  height: 20%;
+  display: flex;
+  /* background: darkcyan; */
+  flex-direction: column;
+  font-size: 30rpx;
+  margin-top: 20rpx;
+  align-items: center; /*垂直居中*/
+  justify-content: center;/*水平居中*//* background: #358ecc; */
+}
+.middle_view1_4_1 {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  /* background: darkgoldenrod; */
+  flex-direction: row;
+  font-size: 30rpx;
+  align-items: center; /*垂直居中*/
+}
+
+.middle_view1_3 {
+  width: 90%;
+  height: 33%;
+  display: flex;
+  /* background: darkcyan; */
+  flex-direction: row;
+  align-items: center;
+  /* justify-content: center; */
+  font-size: 35rpx;
+}
+
+.bottom {
+  width: 100%;
+  height: 8%;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+}
+
+.bottom_view1 {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*//*justify-content: center; /*水平居中*//* background: #358ecc; */
+  margin-left: 30rpx;
+  font-size: 40rpx;
+}
+
+.bottom_view2 {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  margin-left: 30rpx;
+  font-size: 40rpx;
+  background: #00489D;
+  color: #fff;
+}
+
+.bottom_view2s {
+  width: 30%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  margin-left: 30rpx;
+  font-size: 40rpx;
+  background: #ccc;
+  color: #fff;
+}
+
+
+
+checkbox .wx-checkbox-input {
+  /*border-radius: 50%; /* 圆角 */
+  width: 35rpx; /* 背景的宽 */
+  height: 35rpx; /* 背景的高 */
+  background: #ccc;
+  /* border:#3e91ff */
+}
+
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  border: none;
+  background: #ccc;
+}
+
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  /*border-radius: 50%; /* 圆角 */
+  width: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 30rpx; /* 对勾大小 30rpx */
+  color: #ccc; /* 对勾颜色 白色 */
+  background: #00489D;
+  /* border: 1rpx solid #666; */
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}
+
+.xieyi_text {
+  color: #00489D;
+}
+
+.middle_view1_view2_radio_group{
+  font-size: 20rpx;
+  
+}
+
+
+
+/*  重写 radio 样式  */
+
+/* 未选中的 背景样式 */
+
+radio .wx-radio-input {
+  border-radius: 50%; /* 圆角 */
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.middle_view1_view2_radio1 {
+  margin-left: 25rpx;
+  font-size: 30rpx;
+  margin-right: 25rpx;
+}
+
+.middle_view1_view2_radio2 {
+  font-size: 30rpx;
+  margin-right: 25rpx;
+}
+
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+
+radio .wx-radio-input.wx-radio-input-checked {
+  border: none;
+  /* background: red; */
+}
+
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+
+radio .wx-radio-input.wx-radio-input-checked::before {
+  border-radius: 50%; /* 圆角 */
+  width: 30rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 30rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 30rpx; /* 对勾大小 30rpx */
+  color: #00489D; /* 对勾颜色 白色 */
+  background: #00489D;
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

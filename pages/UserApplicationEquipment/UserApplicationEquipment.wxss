@@ -1,0 +1,120 @@
+.user_application_equipment {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /* border: 1rpx solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*/
+  background: #eee;
+}
+
+.swiper_item_1 {
+  width: 100%;
+  height: 140rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  border-bottom: solid #ccc 1rpx;
+  border-top: solid #ccc 1rpx;
+  margin-top: 15rpx;
+}
+
+.swiper_item_1_1 {
+  width: 100%;
+  height: 140rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  border-bottom: solid #ccc 1rpx;
+}
+
+/*  输入框内默认文字样式 */
+
+.placeholder-class {
+  margin-top: 5rpx;
+  color: #ddd;
+  font-size: 35rpx;
+}
+
+.swiper_item_1_text {
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  margin-top: 5rpx;
+  color: #aaa;
+  font-size: 35rpx;
+  /* background: red; */
+}
+
+.swiper_item_1_input {
+  height: 100%;
+  width: 70%;
+  /* background: red; */
+}
+
+.swiper_item_1_input1 {
+  height: 100%;
+  width: 100%;
+  margin-left: 28rpx;
+  /* background: red; */
+}
+
+/*城市选择器view  */
+
+.middle-css-view2 {
+  border-bottom: 1rpx solid #ddd;
+  margin-top: 25rpx;
+  height: 16%;
+  width: 100%;
+  /* border: 1rpx solid red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*/
+  justify-content: center;
+  color: #666;
+}
+
+.middle-css-view2-text1 {
+  background: darkblue;
+  width: 30%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  margin-top: 5rpx;
+  color: #aaa;
+}
+
+.middle-css-view2-view {
+  height: 100%;
+  width: 70%;
+  margin-left: 15rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* justify-content: center; *//* background: red; */
+}
+
+.bottom {
+  width: 100%;
+  height: 300rpx;
+  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* justify-content: center; *//* background: red; */
+}
+
+.bottom_btn_css {
+  width: 90%;
+ color: rgb(119, 217, 255);
+  background: #fff;
+}

@@ -1,0 +1,153 @@
+.userwallet_container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: #358ecc; */
+  background-size: 100% 100%;
+  background: #eee;
+}
+
+.top {
+  width: 90%;
+  height: 18%;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  /*align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  background-size: 100% 100%;
+}
+
+.top_left {
+  margin-left: 85rpx;
+}
+
+.top_view1 {
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; /*垂直居中*/
+  justify-content: center;
+  width: 100%;
+  height: 35%;
+}
+
+.top_view2 {
+  width: 100%;
+  height: 35%;
+}
+
+.top_view3 {
+  width: 100%;
+  height: 30%;
+  text-align: right;
+  font-size: 30rpx;
+  color: #ccc;
+}
+
+.top_left_text1 {
+  color: #ccc;
+  font-size: 30rpx;
+  margin-top: 35rpx;
+}
+
+.top_gz_text {
+  margin-right: 15rpx;
+}
+
+.middle {
+  width: 90%;
+  height: 25%;
+  margin-top: 20rpx;
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  border-radius: 10rpx;
+  /* background: red; */
+  }
+
+.middle_view1 {
+  width: 100%;
+  height: 50%;
+  /* background: darkcyan; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.middle_view1_1 {
+  width: 50%;
+  height: 100%;
+  /* background: darkmagenta; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+
+.middle_view2 {
+  width: 100%;
+  height: 50%;
+  /* background: darkcyan; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.bottom {
+  width: 90%;
+  height: 15%;
+  margin-top: 20rpx;
+  background: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.bottom_button {
+  width: 100%;
+  height: 30%;
+  /* background: darkolivegreen; */
+}
+
+.bottom_button_style {
+  width: 80%;
+  margin-top: 25rpx;
+}
+
+.bottom_button_view {
+  position: relative;
+  width: 100%;
+  /* background: red; */
+  text-align: center;
+  margin-top: 35rpx;
+  font-size: 30rpx;
+  color: #ccc;
+}
+
+.allcolor {
+  font-size: 55rpx;
+  color: rgba(133, 215, 247, 0.973);
+}
+
+.middle_view1_1_qian_size {
+  font-size: 55rpx;
+  color: rgba(133, 215, 247, 0.973);
+}
+
+.button1_color{
+background:  rgba(112, 202, 238, 0.973);
+color: #fff;
+}
+.button2_color{
+background: rgb(238, 121, 121);
+color: #fff;
+}

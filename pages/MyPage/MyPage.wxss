@@ -1,0 +1,346 @@
+.my_page {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: #358ecc; */
+  background: #fff;
+}
+
+.top_css {
+  background: #41abff;
+  width: 100%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.top_css1 {
+  /* background: gold; */
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.user_img_css {
+  width: 23%;
+  height: 100%;
+  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.user_img_css1 {
+  width: 27%;
+  height: 100%;
+  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.userinfo-avatar {
+  width: 90%;
+  height: 140rpx;
+  margin: 5rpx;
+  /* border-radius: 50%; */
+  background-size: 100% 100%;
+  margin-left: 15rpx;
+}
+
+.userinfo-avatar1 {
+  width: 70%;
+  height: 128rpx;
+  margin: 5rpx;
+  /* border-radius: 50%; */
+  background-size: 100% 100%;
+}
+
+.tap_textview {
+  height: 140rpx;
+  width: 50%;
+  /* background: firebrick; */
+  display: flex;
+  flex-direction: row;
+}
+
+.tap_textview_text {
+  height: 100%;
+  width: 100%;
+  /* background: gold; */
+  display: flex;
+  flex-direction: column;
+}
+
+.userinfo-nickname {
+  width: 100%;
+  height: 33%;
+  color: #fff;
+  font-size: 28rpx;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  margin-left: 15rpx;
+}
+
+.userinfo-nickname1 {
+  width: 100%;
+  height: 33%;
+  /* background: forestgreen; */
+  text-align: left;
+}
+
+.userinfo-nickname1_text {
+  height: 80%;
+  width: 185rpx;
+  color: #fff;
+  font-size: 25rpx;
+  background: #16ddc8;
+  margin-left: 10rpx;
+  border-radius: 45rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; *//* background: #e4e4e4; */
+}
+
+.top_css_css1_text {
+  width: 100%;
+  height: 20%;
+  background: #0cd1e2;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.top_css_css1_text_textcss {
+  width: 100%;
+  height: 100%;
+  color: #fff;
+  font-size: 30rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: yellow; */
+}
+
+.middle_css {
+  height: 100%;
+  width: 100%;
+  margin-top: 35rpx;
+  /* background: darkgray; */
+}
+
+.middle_cssall {
+  width: 100%;
+  height: 80rpx;
+  /* background: darkmagenta; */
+  border-bottom: solid #e4e4e4 1rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15rpx;
+}
+
+.middle_cssall1 {
+  width: 100%;
+  height: 120rpx;
+  /* background: darkmagenta; */
+  border-bottom: solid #e4e4e4 1rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15rpx;
+}
+
+.middle_css_overtext {
+  /* background: darkblue; */
+  margin-left: 25rpx;
+  width: 30%;
+  font-size: 30rpx;
+}
+
+.middle_css_gettext {
+  /* background: salmon; */
+  width: 65%;
+  float: right;
+  /* font-size: 45rpx; */
+  text-align: right;
+  margin-right: 15rpx;
+  color: #1e90ff;
+  font-size: 30rpx;
+}
+
+.middle_css_gettext1 {
+  /* background: salmon; */
+  width: 5%;
+  float: right;
+  /* font-size: 45rpx; */
+  text-align: right;
+  margin-right: 25rpx;
+  font-size: 30rpx;
+}
+
+/* 二维码生成器 */
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.canvas-box {
+  position: fixed;
+  top: 999999rpx;
+  left: 0;
+}
+
+.img-box {
+  width: 156rpx;
+  height: 140rpx;
+  /* border-radius: 50%; */
+  background-size: 100% 100%;
+}
+
+.img-box image {
+  width: 140rpx;
+  height: 140rpx;
+  background-size: 100% 100%;
+}
+
+/* 二维码生成器 */
+
+
+.genfexian {
+  background: #e4e4e4;
+  width: 100%;
+  height: 20rpx;
+}
+
+.four_imgcss_style {
+  /* background: red; */
+  widows: 100%;
+  height: 150rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.four_imgcss_style1 {
+  width: 25%;
+  height: 100%;
+  /* background: rebeccapurple; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.four_imgcss_style_img_text {
+  font-size: 30rpx;
+  color: #000;
+  margin-top: 15rpx;
+}
+
+.four_imgcss_style_img {
+  width: 80rpx;
+  height: 80rpx;
+}
+
+.kucun_view {
+  width: 100%;
+  height: 120rpx;
+  /* background: darkmagenta; */
+  border-bottom: solid #e4e4e4 1rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 15rpx;
+}
+
+.kucun_view_text1 {
+  /* background: darkblue; */
+  margin-left: 25rpx;
+  width: 20%;
+  font-size: 30rpx;
+}
+
+.kucun_view_view {
+  width: 40%;
+  height: 120rpx;
+  /* background: darkmagenta; *//* border-bottom: solid #e4e4e4 1rpx; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  margin-top: 15rpx;
+  /* background: red; */
+}
+
+.kucun_view_button {
+  width: 80%;
+  height: 60rpx;
+  line-height: 60rpx;
+  font-size: 30rpx;
+  color: #fff;
+  background: #41abff;
+  border-radius: 15rpx;
+  margin-bottom: 15rpx;
+}
+
+.kucun_view_text2 {
+  /* background: salmon; */
+  width: 35%;
+  float: right;
+  /* font-size: 45rpx; */
+  text-align: right;
+  margin-right: 15rpx;
+  color: #1e90ff;
+  font-size: 30rpx;
+}
+
+.kucun_view_text3 {
+  /* background: salmon; */
+  width: 5%;
+  float: right;
+  /* font-size: 45rpx; */
+  text-align: right;
+  margin-right: 25rpx;
+  font-size: 30rpx;
+}
+
+.middle_css_overtext_over {
+  /* background: darkblue; */
+  text-align: center;
+  width: 100%;
+  font-size: 30rpx;
+}
+
+.wdl {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  /*justify-content: center; /*水平居中*/
+  font-size: 35rpx;
+  color: #fff;
+  /* background: yellow; */
+}
+.wdl_text{
+  margin-bottom: 45rpx;
+  margin-left: 35rpx;
+}

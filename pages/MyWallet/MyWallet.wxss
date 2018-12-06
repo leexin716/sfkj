@@ -1,0 +1,357 @@
+.login {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: #358ecc; */
+  background-size: 100% 100%;
+  background: #eee;
+}
+
+.middle-css {
+  width: 100%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center;
+  /* margin-top: 25rpx; *//* background: darkblue; */
+}
+
+.middle-css-view1 {
+  background: #fff;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center;
+  /* border-top: solid #000 1rpx;
+  border-bottom: solid #000 1rpx; */
+}
+
+.top_text1_css {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 130rpx;
+  font-size: 40rpx;
+  /* background: darkcyan; */
+  line-height: 100%;
+}
+
+.top_text2_css {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 120rpx;
+  /* background: darkcyan; */
+  line-height: 100%;
+  font-size: 40rpx;
+  /* border-left: solid #000 3rpx; */
+}
+
+.top_text3_css {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 25%;
+  height: 120rpx;
+  font-size: 40rpx;
+  /* background: darkcyan; */
+  line-height: 100%;
+  /* border-left: solid #000 3rpx; */
+}
+
+.bottom-css {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  margin-top: 35rpx;
+  background: #fff;
+}
+
+.bottom-css-swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.on {
+  /* width: 150rpx; */
+  color: #333;
+  border-bottom: 10rpx solid #3be6ec;
+  /* background: red; */
+}
+
+.nono {
+  color: #999;
+}
+
+.swiper-item1_allcss {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: #358ecc; */
+  background-size: 100% 100%;
+  background: #eee;
+}
+
+.swiper-item_1_top {
+  background: #fff;
+  width: 90%;
+  height: 25%;
+  border-radius: 10rpx;
+}
+
+.swiper-item_1_toptext1 {
+  margin-left: 45rpx;
+  font-size: 40rpx;
+  margin-top: 45rpx;
+}
+.swiper-item_1_toptext1_text{
+color: #ccc;
+}
+
+.swiper-item_1_toptext2 {
+  margin-top: 15rpx;
+  margin-left: 55rpx;
+  
+}
+
+.swiper-item_1_toptext3 {
+  width: 100%;
+  font-size: 35rpx;
+  color: #ccc;
+  /* background: darkorange; */
+  text-align: right;
+  line-height: 20rpx;
+}
+
+.swiper-item_1_toptext3_text {
+  margin-right: 45rpx;
+}
+
+.swiper-item_1_middle {
+  width: 100%;
+  height: 3%;
+  background: rgb(235, 234, 232);
+}
+
+.swiper-item_1_bottom {
+  width: 90%;
+  height: 67%;
+  /* background: cadetblue; */
+  border-radius: 10rpx;
+}
+
+.swiper-item_1_bottom_view1 {
+  height: 30%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  background: #fff;
+  border-radius: 10rpx;
+}
+
+.swiper-item_1_bottom_view1_view1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  /* background: darkblue; */
+}
+
+/* 金额文字模块通用样式 */
+
+.swiper-item_1_bottom_view1_view1_1 {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  color: rgb(204, 190, 204);
+}
+
+.swiper-item_1_bottom_view1_view2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  /* background: dodgerblue; */
+}
+
+/* .swiper-item_1_bottom_view2 {
+  height: 40%;
+  width: 100%;
+  margin-top: 25rpx;
+  background: darkorange;
+} */
+
+.swiper-item_1_bottom_view2_button-view {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  
+}
+
+.swiper-item_1_bottom_view2_button {
+  width: 90%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 105rpx;
+  background: rgb(236, 115, 136);
+  color: floralwhite;
+}
+
+.swiper-item_1_bottom_view2_button1 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 35rpx;
+  text-align: center;
+  color: #ccc;
+  font-size: 35rpx;
+ 
+  
+}
+
+.swiper-item_1_bottom_view2_button11 {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 55rpx;
+  text-align: center;
+  color: #ccc;
+  /* background: red; */
+  
+}
+
+/* 代理押金CSS */
+
+.scroll-view-y {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /* border: 1rpx solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*/
+}
+
+.container_view {
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid #000 1rpx;
+  /* border-bottom: solid 1rpx darkmagenta; *//*align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: #358ecc; */
+}
+
+.view_left {
+  width: 70%;
+  height: 100%;
+  /* background: firebrick; */
+  display: flex;
+  flex-direction: column;
+}
+
+.view_left_top {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  /* background: darkblue; */
+  align-items: center;
+}
+
+.view_left_top_text {
+  width: 100%;
+  margin-top: 8rpx;
+  /* background: darkcyan; */
+  display: block;
+  font-size: 32rpx;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.view_left_bottom {
+  width: 100%;
+  height: 50%;
+  /* background: wheat; */
+}
+
+.view_right {
+  width: 30%;
+  height: 100%;
+  /* background: firebrick; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.xiancss{
+  width: 12%;
+  height: 100%;
+  /* background: red; */
+}
+.xiancss{
+  width: 5%;
+  height: 100%;
+  /* background: red; */
+}
+
+
+.allcolor{
+  font-size: 55rpx;
+  color: rgba(133, 215, 247, 0.973);
+}
+
+.swiper-item_3_bottom_view1 {
+  height: 60%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  background: #fff;
+  border-radius: 10rpx;
+  /* background: red; */
+}
+
+
+
+.swiper-item_3_bottom_view1_view1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  /* background: darkblue; */
+}
+
+
+
+.swiper-item_3_bottom_view1_view2 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  /* background: dodgerblue; */
+}

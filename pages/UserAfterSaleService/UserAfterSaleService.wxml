@@ -1,0 +1,119 @@
+<view class="containers">
+
+
+
+  <view class='swiperCSS'>
+    <view class='top_img_css' style="background-image: url('http://qrcode.waterever.cn/image/yading_top.jpg')">
+    </view>
+    <view class='top_img_css1'>
+    </view>
+    <swiper class='swiper-swiper' indicator-dots="{{indicatorDots}}" autoplay="{{autoplay}}" interval="{{interval}}" duration="{{duration}}" current='{{AddswiperIndex}}' previous-margin='0' next-margin='0' bindchange="swiperChange">
+
+      <block wx:for="{{swiperdata}}" wx:key="swiperdataKey">
+        <swiper-item class='swiper_item_style'>
+          <view class='progress_box' wx:if='{{item.applyDate!==10086}}'>
+            <canvas class="progress_bg" canvas-id="canvasProgressbg"> </canvas>
+            <canvas class="progress_canvas" canvas-id="canvasProgress"> </canvas>
+            <view class="progress_text">
+
+              <view class='swiper_item_style_view_view1' wx:if='{{item.status==3}}'>
+                <text>{{text1}}</text>
+                <text class='day_color'> {{item.time}} </text>
+                <text>{{text3}}</text>
+              </view>
+
+              <view class='swiper_item_style_view_view1' wx:else>
+                <text>暂无设备</text>
+              </view>
+              <view class='swiper_item_style_view_view2'>
+                <text wx:if='{{item.status==1}}'>申请中</text>
+                <text wx:elif='{{item.status==2}}'>已发货</text>
+                <text wx:elif='{{item.status==3}}'>使用中</text>
+              </view>
+            </view>
+          </view>
+
+
+          <view class='progress_box' wx:else>
+
+            <view class="progress_text" bindtap='GoToUserApplicationEquipment'>
+
+              <view class='swiper_item_style_view_view1'>
+                <text>未来</text>
+                <text>水</text>
+                <text>源</text>
+              </view>
+              <view class='swiper_item_style_view_view2'>
+                <text>一键申请</text>
+
+              </view>
+            </view>
+          </view>
+
+
+        </swiper-item>
+      </block>
+
+    </swiper>
+
+    <!--左按钮  -->
+    <view class='middle-css-left' bindtap='LeftBtn'>
+      <image class='middle-css-left-img' src="{{leftimgs}}" />
+    </view>
+    <!--右按钮  -->
+    <view class='middle-css-reight' bindtap='ReightimgsBtn'>
+      <image class='middle-css-reight-img' src="{{reightimgs}}" />
+    </view>
+
+
+    <view class='swiper_swiper_bottom_css'>
+      <view class='swiper_swiper_bottom_left_css'>
+        <text class='swiper_swiper_bottom_left_css_text1'>城市</text>
+        <text class='swiper_swiper_bottom_left_css_text2'>宁波</text>
+      </view>
+      <view class='swiper_swiper_bottom_middle_css'>
+        <text class='swiper_swiper_bottom_middle_css_text1'>城市水质</text>
+        <view class='swiper_swiper_bottom_middle_css_text2'>
+          <text class='swiper_swiper_bottom_middle_css_text21'>------</text>
+          <!-- <text class='swiper_swiper_bottom_middle_css_text22'>氯气值:0.01</text> -->
+        </view>
+
+      </view>
+      <view class='swiper_swiper_bottom_right_css'>
+
+        <text class='swiper_swiper_bottom_left_css_text1'>设备状态</text>
+
+        <text class='swiper_swiper_bottom_left_css_text2' wx:if="{{bottomData==1}}">申请中</text>
+        <text class='swiper_swiper_bottom_left_css_text2' wx:elif="{{bottomData==2}}">待发货</text>
+        <text class='swiper_swiper_bottom_left_css_text2' wx:elif="{{bottomData==3}}">使用中</text>
+        <text class='swiper_swiper_bottom_left_css_text2' wx:else>--</text>
+      </view>
+
+    </view>
+  </view>
+
+
+
+
+
+  <view class='bottom'>
+
+    <view class='bottom_view' bindtap='GoToUserApplicationEquipmentNext' style="background-image: url('http://qrcode.waterever.cn/image/bjimgs1.png')" wx:if="{{bottomData==1}}">
+      <text class='bottom_text'>继续申请</text>
+    </view>
+    <view class='bottom_view' bindtap='goToDevice' style="background-image: url('http://qrcode.waterever.cn/image/bjimgs1.png')" wx:elif="{{bottomData==2}}">
+      <text class='bottom_text'>设备绑定</text>
+    </view>
+
+    <view class='bottom_view' style="background-image: url('http://qrcode.waterever.cn/image/bjimgs1.png')" wx:elif="{{bottomData==3}}">
+      <text class='bottom_text'>使用中</text>
+    </view>
+
+
+    <view class='bottom_view' bindtap='GoToUserApplicationEquipment' style="background-image: url('http://qrcode.waterever.cn/image/bjimgs1.png')" wx:else>
+      <image class='bottom_view_img' src='http://qrcode.waterever.cn/image/yandingdevice.png' />
+      <text class='bottom_text'>一键申请</text>
+    </view>
+
+  </view>
+</view>

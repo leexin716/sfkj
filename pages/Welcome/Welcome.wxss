@@ -1,0 +1,112 @@
+.container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: #358ecc; */
+  background-size: 100% 100%;
+  background: #fff;
+}
+
+.top {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  background: #fff;
+}
+
+.top_view1 {
+  width: 100%;
+  height: 80%;
+  /* background: yellow; */
+ 
+}
+
+.top_view1_img {
+  width: 100%;
+  height: 100%;
+  background-size: 100% 100%;
+}
+
+.top_view2 {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  font-size: 35rpx;
+}
+
+.text_font_color {
+  color: rgb(8, 218, 255);
+}
+
+.middle {
+  width: 100%;
+  height: 2%;
+  background: #ddd;
+}
+
+.bottom {
+  width: 100%;
+  height: 48%;
+  background: #eee;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+}
+
+.bottom_view {
+  width: 85%;
+  height: 60%;
+  background: #fff;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  border: 1rpx solid #ddd;
+}
+
+.bottom_text1 {
+  font-size: 35rpx;
+  margin-bottom: 15rpx;
+  color: #bbb;
+}
+
+.bottom_text2 {
+  font-size: 35rpx;
+  margin-bottom: 65rpx;
+  color: #bbb;
+}
+
+.bottom_button {
+  width: 250rpx;
+  height: 70rpx;
+  line-height: 70rpx;
+  color: #fff;
+  background: rgb(8, 218, 255);
+}
+
+/* 悬浮按钮 */
+
+.buttomreight {
+  height: 80rpx;
+  background: rgb(61, 227, 233);
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 55rpx;
+  margin-right: 50rpx;
+  border-radius: 550rpx;
+  outline: none;
+  color: #595757;
+}

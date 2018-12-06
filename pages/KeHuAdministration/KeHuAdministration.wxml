@@ -1,0 +1,50 @@
+<view class='all'>
+
+  <view class='top_clss'>
+    <view class='top_top_css'>
+      <image class='top_top_img_css' src='{{imagePath}}' bindtap='previewImg' />
+    </view>
+    <view class='top_bottom_css'>
+      <text>推广二维码</text>
+    </view>
+  </view>
+
+
+
+
+  <scroll-view scroll-y class='scroll-view-y' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+
+
+    <view class='list_css' wx:for='{{ArrayData}}' wx:key='forkey'>
+
+      <view class='list_css'>
+        <text class='list_text_css'>订单编号：{{item.orderNumber}}</text>
+        <text class='list_text_css'>订单时间：{{item.orderDate}}</text>
+        <text class='list_text_css'>购买用户：{{item.name}}</text>
+        <text class='list_text_css'>购买数量：{{item.count}}</text>
+        <text class='list_text_css' wx:if='{{item.superId!==0}}'>推荐上级：{{item.superId}}</text>
+        <text class='list_text_css' wx:else>推荐上级：我</text>
+      </view>
+
+    </view>
+
+  </scroll-view>
+
+
+
+
+
+
+
+
+
+
+
+  <!-- 二维码生成所需canvas画布 -->
+  <view hidden="{{maskHidden}}" class="mask"></view>
+  <view class="canvas-box">
+    <canvas hidden="{{canvasHidden}}" style="width: 686rpx;height: 686rpx;background:#f1f1f1;" canvas-id="mycanvas" />
+  </view>
+
+
+</view>

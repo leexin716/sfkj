@@ -1,0 +1,71 @@
+<view class='userwallet_container'>
+  <view class='top'>
+    <view class='top_view1'>
+      <text class='top_left top_left_text1'>可提现金额 （元）</text>
+    </view>
+    <view class='top_view2'>
+      <text class='top_left allcolor'>{{Balance}}</text>
+    </view>
+    <view class='top_view3'>
+      <text class='top_gz_text' bindtap='GoToPurseDetail'>钱包明细》</text>
+    </view>
+
+  </view>
+
+  <view class='middle'>
+    <view class='middle_view1' bindtap='GoToTiXianDetails'>
+      <view class='middle_view1_1'>
+        <text class='top_left_text1'>提现申请 :</text>
+        <text class='middle_view1_1_qian_size' wx:if="{{CashApply==null}}">0</text>
+        <text class='middle_view1_1_qian_size' wx:else>{{CashApply}}</text>
+      </view>
+      <view class='middle_view1_1'>
+        <text class='top_left_text1'>成功提现 :</text>
+        <text class='middle_view1_1_qian_text middle_view1_1_qian_size' wx:if="{{CashOut==null}}">0</text>
+        <text class='middle_view1_1_qian_text middle_view1_1_qian_size' wx:else>{{CashOut}}</text>
+      </view>
+    </view>
+
+
+
+
+    <view class='middle_view2'>
+      <view class='middle_view1_1' bindtap='GoToCommissionIncome'>
+        <text class='top_left_text1'>佣金收入 :</text>
+        <text class='middle_view1_1_qian_text middle_view1_1_qian_size' wx:if="{{Commission==null}}">0</text>
+        <text class='middle_view1_1_qian_text middle_view1_1_qian_size' wx:else>{{Commission}}</text>
+      </view>
+      <view class='middle_view1_1' bindtap='GoToRecharge'>
+        <text class='top_left_text1'>充值明细 :</text>
+        <text class='middle_view1_1_qian_text middle_view1_1_qian_size' wx:if="{{Recharge==null}}">0</text>
+        <text class='middle_view1_1_qian_text middle_view1_1_qian_size' wx:else>{{Recharge}}</text>
+      </view>
+    </view>
+
+
+  </view>
+
+  <view class='bottom' bindtap='GpToEquipmentDeposit'>
+    <view class='middle_view1_1'>
+      <text class='top_left_text1'>设备押金 :</text>
+      <text class='middle_view1_1_qian_text middle_view1_1_qian_size'>{{DeviceDeposit}}</text>
+    </view>
+    <view class='middle_view1_1'>
+      <text class='top_left_text1'>代理押金 :</text>
+      <text class='middle_view1_1_qian_text middle_view1_1_qian_size'>{{AgentDeposit}}</text>
+    </view>
+  </view>
+
+  <view class='bottom_button'>
+    <button class='bottom_button_style button1_color' bindtap='GoToPutRecharge'>充值</button>
+    <button class='bottom_button_style button2_color' bindtouchstart='GoToTiXian'>提现</button>
+    <view class='bottom_button_view'>
+      <text>钱包规则说明 》</text>
+    </view>
+
+  </view>
+
+
+
+
+</view>

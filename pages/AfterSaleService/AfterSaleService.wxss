@@ -1,0 +1,433 @@
+/**detailsview.wxss**/
+
+.containers {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*/
+  background-size: 100% 100%;
+  background: #fff;
+}
+
+/*********************swiper内容区CSS**************************  */
+
+.swiperCSS {
+  /* border: 1rpx solid red; */
+  width: 100%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: red; *//* background: red; */
+}
+
+.swiper-swiper {
+  width: 100%;
+  height: 65%;
+  /* background: yellow; */
+}
+
+.swiper_item_style {
+  width: 100%;
+  height: 100%;
+  /* background: darkcyan; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.swiper_item_style_view {
+  width: 50%;
+  height: 90%;
+  /* background: darkgoldenrod; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  border-radius: 50%;
+  border: 20rpx solid chartreuse;
+}
+
+.middle-css-left-img {
+  width: 40rpx;
+  height: 60rpx;
+  /* border: 1rpx solid red; */
+}
+
+.middle-css-reight-img {
+  width: 40rpx;
+  height: 60rpx;
+  /* border: 1rpx solid red; */
+}
+
+.middle-css-left {
+  width: 20%;
+  height: 60%;
+  /* background: rgb(61, 227, 233); */
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  outline: none;
+  color: #595757;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.middle-css-reight {
+  width: 20%;
+  height: 60%;
+  /* background: rgb(61, 227, 233); */
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  right: 0;
+  top: 0;
+  outline: none;
+  color: #595757;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}
+
+.top_img_css {
+  width: 100%;
+  height: 16%;
+  /* background: rgb(12, 161, 247); */
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 0;
+  outline: none;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  background-size: 100% 100%;
+}
+
+.top_img_css1 {
+  width: 100%;
+  height: 20%;
+}
+
+.swiper_item_style_view_view1 {
+  width: 100%;
+  margin-top: 15rpx;
+  /* background: darkorange; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  font-size: 35rpx;
+}
+
+.swiper_item_style_view_view2 {
+  font-size: 30rpx;
+  color: #aaa;
+  margin-top: 10rpx;
+  /* background: red; */
+}
+
+.swiper_swiper_bottom_css {
+  width: 100%;
+  height: 20%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #bce8f3; */
+  margin-top: 25rpx;
+  /* background: red; */
+}
+
+.swiper_swiper_bottom_left_css {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: darkcyan; */
+}
+
+.swiper_swiper_bottom_left_css_text1 {
+  width: 70%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  background: #96d2ed;
+  margin-bottom: 20rpx;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.swiper_swiper_bottom_middle_css_text2 {
+  width: 100%;
+  height: 50%;
+  /* background: wheat; */
+  color: #bbb;
+  font-size: 35rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /*水平居中*/
+}
+
+.swiper_swiper_bottom_middle_css_text21 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center; /*水平居中*/
+}
+
+.swiper_swiper_bottom_middle_css_text22 {
+  width: 50%;
+  height: 100%;
+  display: flex;
+}
+
+.swiper_swiper_bottom_left_css_text2 {
+  width: 100%;
+  height: 50%;
+  text-align: center;
+  /* background: wheat; */
+  color: #bbb;
+  font-size: 35rpx;
+}
+
+.swiper_swiper_bottom_middle_css {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: darkcyan; */
+}
+
+.swiper_swiper_bottom_middle_css_text1 {
+  width: 55%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  background: #96d2ed;
+  margin-bottom: 20rpx;
+  border-radius: 15rpx;
+  font-size: 30rpx;
+  color: #fff;
+}
+
+.swiper_swiper_bottom_right_css {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: darkcyan; */
+}
+
+/********************圆形进度条**************************/
+
+.progress_box {
+  position: relative;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: #eee; */
+  border: 25rpx solid #96d2ed;
+  border-radius: 50%;
+}
+
+.progress_bg {
+  position: absolute;
+  width: 220px;
+  height: 220px;
+}
+
+.progress_canvas {
+  width: 220px;
+  height: 220px;
+}
+
+.progress_text {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress_info {
+  font-size: 36rpx;
+  padding-left: 16rpx;
+  letter-spacing: 2rpx;
+}
+
+.progress_dot {
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background-color: #fb9126;
+}
+
+.day_color {
+  font-size: 50rpx;
+  color: rgb(35, 165, 240);
+}
+
+.bottom {
+  width: 100%;
+  height: 40%;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  background-size: 100% 100%;
+}
+
+.bottom_view {
+  width: 280rpx;
+  height: 280rpx;
+  /* background: rgb(21, 131, 233); */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+  border-radius: 50%;
+  background-size: 100% 100%;
+}
+
+.bottom_view_img {
+  width: 90rpx;
+  height: 90rpx;
+  /* background: darkcyan; */
+  background-size: 100% 100%;
+}
+
+.bottom_text {
+  margin-top: 30rpx;
+  font-size: 35rpx;
+  color: #fff;
+}
+
+/* 悬浮按钮 */
+
+.buttomreight {
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #3dacd6;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 55rpx;
+  margin-right: 50rpx;
+  border-radius: 550rpx;
+  outline: none;
+  color: #fff;
+}
+
+/* *******************自定义弹框************************ */
+
+.modal-mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  opacity: 0.5;
+  overflow: hidden;
+  z-index: 9000;
+  color: #fff;
+}
+
+.modal-dialog {
+  width: 540rpx;
+  overflow: hidden;
+  position: fixed;
+  top: 50%;
+  left: 0;
+  z-index: 9999;
+  background: #f9f9f9;
+  margin: -180rpx 105rpx;
+  border-radius: 36rpx;
+}
+
+.modal-title {
+  padding-top: 50rpx;
+  font-size: 36rpx;
+  color: #030303;
+  text-align: center;
+  border-bottom: 1rpx solid #ccc;
+}
+
+.modal-content {
+  padding: 50rpx 32rpx;
+   display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center;/*水平居中*/
+}
+
+.modal-input {
+  display: flex;
+  background: #fff;
+  border: 2rpx solid #ddd;
+  border-radius: 4rpx;
+  font-size: 28rpx;
+}
+
+.input {
+  width: 100%;
+  height: 82rpx;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  padding: 0 20rpx;
+  box-sizing: border-box;
+  color: #333;
+}
+
+input-holder {
+  color: #666;
+  font-size: 28rpx;
+}
+
+.modal-footer {
+  display: flex;
+  flex-direction: row;
+  height: 86rpx;
+  border-top: 1px solid #dedede;
+  font-size: 34rpx;
+  line-height: 86rpx;
+}
+
+.btn-cancel {
+  width: 50%;
+  color: #666;
+  text-align: center;
+  border-right: 1px solid #dedede;
+}
+
+.btn-confirm {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center;/*水平居中*/
+  width: 100%;
+  color: #96D2ED;
+  text-align: center;
+}
+.modal-content-color{
+  font-size: 30rpx;
+}
+
+/* *******************自定义弹框************************ */

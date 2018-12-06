@@ -1,0 +1,61 @@
+.scroll-view-y {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /* border: 1rpx solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*/
+}
+
+.container_view {
+  width: 100%;
+  height: 140rpx;
+  display: flex;
+  flex-direction: row;
+  border-bottom: solid #000 1rpx;
+  /* border-bottom: solid 1rpx darkmagenta; *//*align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: #358ecc; */
+}
+
+.view_left {
+  width: 70%;
+  height: 100%;
+  /* background: firebrick; */
+  display: flex;
+  flex-direction: column;
+}
+
+.view_left_top {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  /* background: darkblue; */
+  align-items: center;
+}
+
+.view_left_top_text {
+  width: 100%;
+  margin-top: 8rpx;
+  /* background: darkcyan; */
+  display: block;
+  font-size: 32rpx;
+  color: #000;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.view_left_bottom {
+  width: 100%;
+  height: 50%;
+  /* background: wheat; */
+}
+
+.view_right {
+  width: 30%;
+  height: 100%;
+  /* background: firebrick; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}

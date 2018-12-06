@@ -1,0 +1,109 @@
+.all {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: #358ecc; */
+  background: #fff;
+}
+
+.top_clss {
+  width: 100%;
+  height: 25%;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+  border-bottom: 1rpx solid #ccc;
+}
+
+.top_top_css {
+  width: 100%;
+  height: 75%;
+  /* background: rebeccapurple; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*//* background: #358ecc; */
+}
+
+.top_top_img_css {
+  width: 250rpx;
+  height: 250rpx;
+  /* background: red; */
+  background-size: 100% 100%;
+}
+
+.top_bottom_css {
+  width: 100%;
+  height: 25%;
+  /* background: darkgray; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center; /*水平居中*//* background: #358ecc; */
+}
+
+.scroll-view-y {
+  /* position: fixed; */
+  width: 100%;
+  height: 75%;
+  /* border: 1rpx solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: red; */
+}
+
+.list_css {
+  width: 100%;
+  height: 400rpx;
+  /* background: rebeccapurple; */
+  display: flex;
+  flex-direction: column;
+  margin-top: 15rpx;
+  /*align-items: center; /*垂直居中*/
+  /*justify-content: center; /*水平居中*/
+  border-bottom: 1rpx solid #ccc;
+}
+.list_text_css{
+  width: 100%;
+  height:80rpx;
+  font-size: 30rpx;
+  margin-left: 25rpx;
+   overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+/* 二维码生成器 */
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 3;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+
+.canvas-box {
+  position: fixed;
+  top: 999999rpx;
+  left: 0;
+}
+
+.img-box {
+  width: 156rpx;
+  height: 140rpx;
+  /* border-radius: 50%; */
+  background-size: 100% 100%;
+}
+
+.img-box image {
+  width: 140rpx;
+  height: 140rpx;
+  background-size: 100% 100%;
+}
+
+/* 二维码生成器 */

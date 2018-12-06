@@ -1,0 +1,142 @@
+<view class="login">
+
+  <view class='middle-css'>
+    <view class='middle-css-view1'>
+
+      <view class='text_1'>
+        <text class="middle-css-view1-text1 {{currentTab==0 ? 'on' : 'nono'}}" bindtap='swichTap' data-current="0">个人认证</text>
+      </view>
+
+      <view class='text_2'>
+        <text class="middle-css-view1-text2 {{currentTab==1 ? 'on' : 'nono'}}" bindtap='swichTap' data-current="1">企业认证</text>
+      </view>
+
+
+
+    </view>
+  </view>
+
+  <view class='bottom-css'>
+    <swiper class='bottom-css-swiper' current="{{currentTab}}" autoplay="{{false}}" duration="300" bindchange="bindChange">
+      <swiper-item>
+        <view class='swiper_item_1'>
+          <text class='swiper_item_1_text'>我的姓名：</text>
+          <input class='swiper_item_1_input' value='{{UserName}}' maxlength='8' placeholder=' 姓名' placeholder-class='placeholder-class' bindinput='UserNmaeInput'></input>
+        </view>
+
+        <view class='swiper_item_1_1'>
+          <text class='swiper_item_1_text'>手 机 号：</text>
+          <input class='swiper_item_1_input' value='{{Phone}}' maxlength='18' placeholder=' 手机号' placeholder-class='placeholder-class' bindinput='PhoneInput'></input>
+        </view>
+
+        <view class='swiper_item_1_1'>
+          <text class='swiper_item_1_text'>身份证号：</text>
+          <input class='swiper_item_1_input' value='{{MyID}}' maxlength='18' placeholder=' 身份证' placeholder-class='placeholder-class' bindinput='MyIdInput'></input>
+        </view>
+
+        <view class='swiper_item_1_1'>
+          <text class='swiper_item_1_text'>我的地址：</text>
+          <view class='middle-css-view2-view placeholder-class'>
+            <picker mode="region" bindchange="bindRegionChange" value="{{CityAddress}}" custom-item="{{customItem}}">
+              <view>
+                {{CityAddress[0]}} {{CityAddress[1]}} {{CityAddress[2]}}
+              </view>
+            </picker>
+          </view>
+        </view>
+
+        <view class='swiper_item_1_1'>
+
+          <input class='swiper_item_1_input1' value='{{DetailedAddress}}' maxlength='18' placeholder=' 详细地址' placeholder-class='placeholder-class' bindinput='DetailedAddressInput'></input>
+        </view>
+
+
+        <view class='bottom_btn_css'>
+          <text class='bottom_btn_css_text'>温馨提示</text>
+          <text class='bottom_btn_css_text'>为便于安装与押金结算等，上述注册/认证资料请真实填写</text>
+          <button class="bottom_btn_next_css" bindtap='PersonalOver'>确定</button>
+        </view>
+      </swiper-item>
+
+
+
+
+
+
+      <swiper-item>
+
+        <view class='swiper_item_2'>
+          <text class='swiper_item_2_text'>我的姓名：</text>
+          <input class='swiper_item_2_input' value='{{UserNameTwo}}' maxlength='18' placeholder=' 姓名' placeholder-class='placeholder-class' bindinput='UserNameTwoInput'></input>
+        </view>
+
+        <view class='swiper_item_2_2'>
+          <text class='swiper_item_2_text'>手 机 号：</text>
+          <input class='swiper_item_2_input' value='{{PhoneTwo}}' maxlength='18' placeholder=' 手机号' placeholder-class='placeholder-class' bindinput='PhoneTwoInput'></input>
+        </view>
+
+        <view class='swiper_item_2_2'>
+          <text class='swiper_item_2_text'>身份证号：</text>
+          <input class='swiper_item_2_input' value='{{MyIdTwo}}' maxlength='18' placeholder=' 身份证' placeholder-class='placeholder-class' bindinput='MyIdTwoInput'></input>
+        </view>
+        <view class='swiper_item_2_2'>
+          <text class='swiper_item_2_text'>我的地址：</text>
+          <view class='middle-css-view2-view placeholder-class'>
+            <picker mode="region" bindchange="bindRegionChange" value="{{CityAddress}}" custom-item="{{customItem}}">
+              <view class='picker_text_style'>
+                {{CityAddress[0]}} {{CityAddress[1]}} {{CityAddress[2]}}
+              </view>
+            </picker>
+          </view>
+        </view>
+        <view class='swiper_item_2_2'>
+          <text class='swiper_item_2_text'>我的地址：</text>
+          <input class='swiper_item_2_input' value='{{DetailedAddressTwo}}' maxlength='18' placeholder=' 请输入个人详细住址' placeholder-class='placeholder-class' bindinput='DetailedAddressTwoInput'></input>
+        </view>
+        <view class='swiper_item_2_2'>
+          <text class='swiper_item_2_text'>公司名称：</text>
+          <input class='swiper_item_2_input' value='{{CorporateName}}' maxlength='18' placeholder=' 请输入公司名称' placeholder-class='placeholder-class' bindinput='CorporateNameInput'></input>
+        </view>
+        <view class='swiper_item_2_2'>
+          <text class='swiper_item_2_text'>公司地址：</text>
+          <input class='swiper_item_2_input' value='{{CorporateAddress}}' maxlength='18' placeholder=' 请输入公司详细地址' placeholder-class='placeholder-class' bindinput='CorporateAddressInput'></input>
+        </view>
+        <view class='swiper_item_2_2'>
+          <text class='swiper_item_2_text'>法人代表：</text>
+          <input class='swiper_item_2_input' value='{{LegalPerson}}' maxlength='18' placeholder=' 请输入法人代表' placeholder-class='placeholder-class' bindinput='LegalPersonInput'></input>
+        </view>
+
+        <view class='bottom_over_img'>
+          <view class='yingyezhiz_view'>
+            <text class='yingyezhiz'>营业执照：</text>
+            <button class='yingyezhiz_btn' bindtap='test'>一键上传</button>
+          </view>
+
+          <view class='over_img'>
+            <image class='over_img_imgcss' src='{{OverSrcList[0]}}' mode="scaleToFill" bindtap='previewImg' />
+          </view>
+
+        </view>
+
+
+
+        <view class='bottom_btn_css1'>
+          <text class='bottom_btn_css_text'>温馨提示</text>
+          <text class='bottom_btn_css_text'>为便于安装与押金结算等，上述注册/认证资料请真实填写</text>
+          <button class="bottom_btn_next_css" bindtap='PersonalTwoOver'>确定</button>
+        </view>
+      </swiper-item>
+
+
+
+    </swiper>
+
+
+
+
+
+
+  </view>
+
+
+</view>

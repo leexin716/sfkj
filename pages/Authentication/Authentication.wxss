@@ -1,0 +1,196 @@
+.phone-login {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*//* background: #358ecc; */
+  background-size: 100% 100%;
+}
+
+.top_css {
+  width: 100%;
+  height: 8%;
+  /* background: red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//*justify-content: center;/*水平居中*//* background: #358ecc; */
+  background-size: 100% 100%;
+  border-bottom: solid #60b7e0 15rpx;
+}
+
+.top_css_text {
+  color: #ccc;
+  margin-top: 25rpx;
+}
+
+.bottom-css-view1 {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  margin-top: 30rpx;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  border-bottom: 1rpx solid #ccc;
+}
+
+.phone-login-allview {
+  height: 29%;
+  width: 90%;
+  margin-top: 65rpx;
+  /* background: tan; */
+  border: solid #ccc 1rpx;
+  border-radius: 15rpx;
+}
+
+.bottom-css-view2 {
+  width: 100%;
+  height: 80rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*//* border-bottom: 1rpx solid #ccc; */
+  margin-top: 30rpx;
+  /* background: greenyellow; */
+}
+
+.bottom-css-imgs {
+  width: 60rpx;
+  height: 50rpx;
+  margin-left: 22rpx;
+}
+
+.bottom-css-imgs11 {
+  width: 24%;
+  height: 50rpx;
+  margin-left: 22rpx;
+  /* background: firebrick; */
+}
+
+.bottom-css-imgs1 {
+  width: 40%;
+  height: 50rpx;
+  margin-left: 22rpx;
+  /* background: firebrick; */
+}
+
+.bottom-css-imgs86 {
+  position: absolute;
+  right: 0;
+  margin-right: 10%;
+}
+
+.bottom-css-input {
+  width: 100%;
+  margin-left: 35rpx;
+}
+
+.bottom-css-input1 {
+  width: 40%;
+  margin-left: 35rpx;
+  background: red;
+}
+
+.yzm-xian-css {
+  width: 1%;
+  height: 80%;
+  background: #ccc;
+}
+
+.yzm-css {
+  height: 80%;
+  width: 60%;
+  line-height: 80%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*/
+  justify-content: center;
+  color: #60b7e0;
+  font-size: 28rpx;
+  background: none;
+}
+
+.yzm-css::after {
+  border: none;
+}
+
+.bottom-css-view4 {
+  width: 100%;
+  height: 40%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+}
+
+.bottom-css-view4-btn {
+  width: 90%;
+  margin-top: 45rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #87cefa;
+  font-size: 48rpx;
+  border-radius: 8rpx;
+  outline: none;
+  color: #fff;
+}
+.bottom-css-view4-btn-false {
+  width: 90%;
+  margin-top: 45rpx;
+  height: 100rpx;
+  line-height: 100rpx;
+  background: #ccc;
+  font-size: 48rpx;
+  border-radius: 8rpx;
+  outline: none;
+  color: #fff;
+}
+
+.bottom-css-view4-btn::after {
+  border: none;
+}
+
+.text_color_style {
+  color: #ccc;
+}
+
+.xieyi {
+  width: 90%;
+  height: 80rpx;
+  /* background: red; */
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*//* border-bottom: 1rpx solid #ccc; */
+  justify-content: flex-end;
+  font-size: 30rpx;
+}
+.xieyi_text{
+  color: #60b7e0;
+}
+checkbox .wx-checkbox-input {
+  border-radius: 50%; /* 圆角 */
+  width: 40rpx; /* 背景的宽 */
+  height: 40rpx; /* 背景的高 */
+}
+
+/* 选中后的 背景样式 （红色背景 无边框 可根据UI需求自己修改） */
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  border: none;
+  background: #3e91ff;
+}
+
+/* 选中后的 对勾样式 （白色对勾 可根据UI需求自己修改） */
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  border-radius: 50%; /* 圆角 */
+  width: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  height: 40rpx; /* 选中后对勾大小，不要超过背景的尺寸 */
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 30rpx; /* 对勾大小 30rpx */
+  color: white; /* 对勾颜色 白色 */
+  background: #3e91ff;
+  /* border: 1rpx solid #666; */
+  transform: translate(-50%, -50%) scale(1);
+  -webkit-transform: translate(-50%, -50%) scale(1);
+}

@@ -1,0 +1,128 @@
+<view class='all'>
+  <!-- <view class='top_css'>
+
+    <view class='top_css_view1'>
+      <button >设备报修</button>
+    </view>
+    <view class='top_css_view2'>
+      <button >
+        申请移机
+      </button>
+    </view>
+
+    <view class=' top_css_view3'>
+      <button >
+        申请拆机
+      </button>
+    </view>
+  </view>
+  <button>下一步</button> -->
+
+
+  <view class='top_css' style="background-image: url('http://qrcode.waterever.cn/image/yading_xq_bj.png')">
+    <text class='top_css_text'>剩余天数</text>
+    <view class='top_css_view1'>
+      <text class='top_css_view1_text'>{{Daydata}}</text>
+      <text space='ensp' class='top_css_text'> 天</text>
+    </view>
+  </view>
+
+
+  <view class='middle_css'>
+
+    <view class='middle_css_view1'>
+      <view class='middle_css_view1_view1'>
+        <image class='middle_css_img' src='http://qrcode.waterever.cn/image/yading_xq_1.png' />
+      </view>
+      <view class='middle_css_view1_view2'>
+        <text class='text_font_size'>设备编号</text>
+      </view>
+      <view class='middle_css_view1_view3'>
+        <text class='middle_css_view1_view3_text'>{{DeviceIDdata}}</text>
+      </view>
+    </view>
+
+    <view class='middle_css_view1'>
+      <view class='middle_css_view1_view1'>
+        <image class='middle_css_img' src='http://qrcode.waterever.cn/image/yading_xq_2.png' />
+      </view>
+      <view class='middle_css_view1_view2'>
+        <text class='text_font_size'>安装时间</text>
+      </view>
+      <view class='middle_css_view1_view3'>
+        <text class='middle_css_view1_view3_text'>{{CreateDatedata}}</text>
+      </view>
+    </view>
+
+
+    <view class='middle_css_view1'>
+      <view class='middle_css_view1_view1'>
+        <image class='middle_css_img' src='http://qrcode.waterever.cn/image/yading_xq_3.png' />
+      </view>
+      <view class='middle_css_view1_view2'>
+        <text class='text_font_size'>电池电量</text>
+      </view>
+      <view class='middle_css_view1_view3'>
+        <text class='middle_css_view1_view3_text'>{{Batterydata}}%</text>
+      </view>
+    </view>
+
+
+
+  </view>
+
+
+
+
+  <view class='bottom_css'>
+
+    <view class='bottom_css_allview'>
+      <view class='bottom_css_view1' bindtap='GoToEquipmentRepair'>
+        <image class='middle_css_img' src='http://qrcode.waterever.cn/image/yading_xq_4.png' />
+        <text class='text_color'>设备报修</text>
+      </view>
+      <view class='xian1'>
+
+      </view>
+      <view class='bottom_css_view1' bindtap='GoToDepositDetailss'>
+        <image class='middle_css_img' src='http://qrcode.waterever.cn/image/yading_xq_5.png' />
+        <text class='text_color'>申请拆机</text>
+      </view>
+      <view class='xian1'>
+
+      </view>
+
+      <!-- <view class='bottom_css_view1' bindtap='GoToDepositDetails'> -->
+      <view class='bottom_css_view1' bindtap='GoToDepositDetailsss'>
+        <image class='middle_css_img' src='http://qrcode.waterever.cn/image/yading_xq_1.png' />
+        <text class='text_color'>申请移机</text>
+      </view>
+
+    </view>
+
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</view>

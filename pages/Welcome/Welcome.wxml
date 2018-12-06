@@ -1,0 +1,50 @@
+<view class='container'>
+
+  <view class='top'>
+    <view class='top_view1'>
+      <image class='top_view1_img' src='http://qrcode.waterever.cn/image/yading.png' />
+    </view>
+
+    <view class='top_view2'>
+      <text>DT起航计划剩余</text>
+      <text class='text_font_color'>{{GetHttpDatas.day}}</text>
+      <text space='ensp'>天   </text>
+      <text>剩余台数</text>
+      <text class='text_font_color'>{{GetHttpDatas.soldout}}</text>
+      <text>台</text>
+    </view>
+
+
+  </view>
+
+  <view class='middle'>
+
+  </view>
+  <view class='bottom'>
+    <view class='bottom_view'>
+
+      <text class='bottom_text1'>未来水源需要获取你的公开信息</text>
+      <text class='bottom_text2'>（昵称、头像、地址等）</text>
+      <button open-type="getUserInfo" bindgetuserinfo="GoToHomePage" class='bottom_button'>允许</button>
+    </view>
+
+
+  </view>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <!-- <button class='buttomreight' open-type="getUserInfo" bindgetuserinfo="GoToHomePage">悬浮按钮</button> -->
+</view>

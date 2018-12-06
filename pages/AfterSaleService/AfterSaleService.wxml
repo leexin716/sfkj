@@ -1,0 +1,120 @@
+<view class="containers">
+
+
+
+  <view class='swiperCSS'>
+    <view class='top_img_css' style="background-image: url('http://qrcode.waterever.cn/image/yading_top.jpg')">
+    </view>
+    <view class='top_img_css1'>
+    </view>
+
+    <view class='progress_box'>
+      <view class="progress_text">
+        <view class='swiper_item_style_view_view1' wx:if='{{bottomData==4}}'>
+          <text>{{text1}}</text>
+          <text class='day_color'>{{text2}} </text>
+          <text>{{text3}}</text>
+        </view>
+        <view class='swiper_item_style_view_view1' wx:else>
+          <text>暂无设备</text>
+        </view>
+
+
+
+        <view class='swiper_item_style_view_view2'>
+          <text wx:if='{{bottomData==1}}'>申请中</text>
+          <text wx:elif='{{bottomData==2}}'>待发货</text>
+          <text wx:elif='{{bottomData==3}}'>待激活</text>
+          <text wx:elif='{{bottomData==4}}'>使用中</text>
+        </view>
+      </view>
+    </view>
+
+
+
+
+    <view class='swiper_swiper_bottom_css'>
+
+      <view class='swiper_swiper_bottom_left_css'>
+        <text class='swiper_swiper_bottom_left_css_text1'>城市</text>
+        <text class='swiper_swiper_bottom_left_css_text2'>{{currentCity}}</text>
+      </view>
+      <view class='swiper_swiper_bottom_middle_css'>
+        <text class='swiper_swiper_bottom_middle_css_text1'>城市水质</text>
+        <view class='swiper_swiper_bottom_middle_css_text2'>
+          <text class='swiper_swiper_bottom_middle_css_text21'>------</text>
+          <!-- <text class='swiper_swiper_bottom_middle_css_text22'>氯气值:0.01</text> -->
+        </view>
+
+      </view>
+      <view class='swiper_swiper_bottom_right_css'>
+        <text class='swiper_swiper_bottom_left_css_text1'>设备状态</text>
+        <text class='swiper_swiper_bottom_left_css_text2' wx:if="{{bottomData==1}}">申请中</text>
+        <text class='swiper_swiper_bottom_left_css_text2' wx:elif="{{bottomData==2}}">待发货</text>
+        <text class='swiper_swiper_bottom_left_css_text2' wx:elif="{{bottomData==3}}">待激活</text>
+        <text class='swiper_swiper_bottom_left_css_text2' wx:elif="{{bottomData==4}}">使用中</text>
+        <text class='swiper_swiper_bottom_left_css_text2' wx:else>--</text>
+      </view>
+
+    </view>
+  </view>
+
+
+
+
+
+  <view class='bottom'>
+
+    <view class='bottom_view' bindtap='GoToUserApplicationEquipmentNext' style="background-image: url('http://qrcode.waterever.cn/image/bjimgs1.png')" wx:if="{{bottomData==1}}">
+      <text class='bottom_text'>继续申请</text>
+    </view>
+    <view class='bottom_view' style="background-image: url('http://qrcode.waterever.cn/image/bjimgs1.png')" wx:elif="{{bottomData==2}}">
+      <text class='bottom_text'>等待发货</text>
+    </view>
+    <view class='bottom_view' bindtap='goToDevice' style="background-image: url('http://qrcode.waterever.cn/image/bjimgs1.png')" wx:elif="{{bottomData==3}}">
+      <text class='bottom_text'>一键激活</text>
+    </view>
+
+    <view class='bottom_view' bindtap='GoToAfterSaleServicePages' style="background-image: url('http://qrcode.waterever.cn/image/bjimgs1.png')" wx:elif="{{bottomData==4}}">
+      <text class='bottom_text'>设备详情</text>
+    </view>
+
+
+    <view class='bottom_view' bindtap='GoToUserApplicationEquipment' style="background-image: url('http://qrcode.waterever.cn/image/bjimgs1.png')" wx:else>
+      <image class='bottom_view_img' src='http://qrcode.waterever.cn/image/yandingdevice.png' />
+      <text class='bottom_text'>一键申请</text>
+    </view>
+  </view>
+
+
+
+  <button class='buttomreight' bindtap='GoToWuLiu' wx:if="{{bottomData==3}}">查看物流</button>
+
+</view>
+
+
+
+
+
+
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <!-- <view class="modal-title">提示</view> -->
+  <view class="modal-content">
+    <!-- <view class="modal-input">
+      <input placeholder-class="input-holder" type="number" maxlength="10" bindinput="inputChange" class="input" placeholder="请输入数量"></input>
+    </view> -->
+    <view>
+      <text class='modal-content-color'>请先申请为代理</text>
+    </view>
+    <view>
+      <text class='modal-content-color'>或扫描其他代理商二维码</text>
+    </view>
+  </view>
+  <view class="modal-footer">
+    <!-- <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view> -->
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>

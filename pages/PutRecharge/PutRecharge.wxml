@@ -1,0 +1,13 @@
+<view class='all'>
+
+  <view class='all_view1'>
+    <view class='all_view2'>
+      <text class='all_view1_text1'>充值金额</text>
+      <input class='all_view1_text2' value='{{PutManye}}' type='number' maxlength='11' placeholder='请输入充值金额' placeholder-class='placeholder-class' bindinput='PutManyeInput'></input>
+    </view>
+  </view>
+  <view class='over_button'>
+    <button class='over_buttons' bindtap='Over'>确定</button>
+  </view>
+
+</view>

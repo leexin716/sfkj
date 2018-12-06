@@ -1,0 +1,50 @@
+<view class='all'>
+  <scroll-view scroll-y class='scroll-view-y' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+    <view class='list_css' wx:for='{{ArrayData}}' wx:key="arraydataKey" wx:for-index="idx" wx:for-item="item">
+      <view class='top_css1' bindtap='showDialogBtn' wx:if='{{item.count==-1}}'>
+        <text>添加助理二维码</text>
+        <!-- <text>{{ZhuliQrCode}}</text> -->
+      </view>
+      <view class='top_css' wx:else>
+        <view class='left_css'>
+          <image class='left_img_css' src='{{item.url}}' data-tag='{{idx}}' data-src="{{image}}" bindtap='previewImg' />
+        </view>
+        <view class='reight_css'>
+          <view class='reight_veiw1_css'>
+            <text>姓名：{{item.name}}</text>
+          </view>
+          <view class='reight_veiw1_css'>
+            <text>生成时间：{{item.time}}</text>
+          </view>
+          <view class='reight_veiw1_css'>
+            <text>推广数量：{{item.count}}</text>
+          </view>
+
+        </view>
+      </view>
+    </view>
+
+    <view hidden="{{maskHidden}}" class="mask"></view>
+    <view class="canvas-box">
+      <canvas hidden="{{canvasHidden}}" style="width: 686rpx;height: 686rpx;background:#f1f1f1;" canvas-id="mycanvas" />
+      <!-- <canvas hidden="{{canvasHidden}}" style="width: 686rpx;height: 686rpx;background:#f1f1f1;" canvas-id="mycanvas-1" /> -->
+    </view>
+  </scroll-view>
+
+</view>
+
+
+<!--弹窗-->
+<view class="modal-mask" bindtap="hideModal" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view class="modal-dialog" wx:if="{{showModal}}">
+  <view class="modal-title">助理信息</view>
+  <view class="modal-content">
+    <view class="modal-input">
+      <input placeholder-class="input-holder"  maxlength="10" bindinput="inputChange" class="input" placeholder="请输入姓名"></input>
+    </view>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">确定</view>
+  </view>
+</view>

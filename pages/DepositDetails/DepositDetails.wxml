@@ -1,0 +1,20 @@
+<scroll-view scroll-y class='scroll-view-y' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+  <view class='container_view'>
+    <view class='view_left'>
+      <view class='view_left_top'>
+        <text class='view_left_top_text'>订单编号： 54654544dsafasdfsafsd56465466545646</text>
+      </view>
+      <view class='view_left_bottom'>
+        <text class='view_left_top_text'>订单编号： 54654dddddddddddd6545646</text>
+      </view>
+    </view>
+    <view class='view_right'>
+      <view class='view_left_top'>
+        <text class='view_left_top_text'>钱包余额</text>
+      </view>
+      <view class='view_left_bottom'>
+        <text class='view_left_top_text'>+444444</text>
+      </view>
+    </view>
+  </view>
+</scroll-view>

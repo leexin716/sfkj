@@ -1,0 +1,54 @@
+<view class='phone-login'>
+
+  <view class='top_css'>
+
+    <text class='top_css_text'>手机号快捷登录</text>
+
+  </view>
+
+
+
+  <view class='phone-login-allview'>
+
+    <view class='bottom-css-view1'>
+      <text class='bottom-css-imgs11 text_color_style'>国家地区</text>
+      <text class='bottom-css-imgs86 text_color_style'>中国大陆 +86 ></text>
+    </view>
+
+
+    <view class='bottom-css-view1'>
+      <text class='bottom-css-imgs11 text_color_style'>手机号</text>
+      <input class='bottom-css-input' value='{{LoginPhone}}' type='number' maxlength='11' placeholder='请输入手机号' placeholder-class='placeholder-class' bindinput='LoginPhoneInput'></input>
+    </view>
+
+
+    <view class='bottom-css-view2'>
+      <text class='bottom-css-imgs1 text_color_style'>校验码</text>
+      <input class='bottom-css-input' value='{{LoginCode}}' type='number' maxlength='6' placeholder='请输入验证码' placeholder-class='placeholder-class' bindinput='LoginCodeInput'></input>
+      <text class='yzm-xian-css'></text>
+      <button class='yzm-css' bindtap='GetCodeData' disabled="{{disabled}}">{{CodeButtonString}}</button>
+    </view>
+  </view>
+  <view class='xieyi' hidden='{{DisplayTrueFlase}}'>
+    <checkbox-group bindchange='checkboxChange'>
+      <label>
+        <checkbox checked='{{CheckboxChecked}}'>
+        </checkbox>
+      </label>
+    </checkbox-group>
+    我同意
+    <text class='xieyi_text' bindtap='xieyi' >{{XueYiContent}}</text>中的条款
+  </view>
+
+
+  <view class='bottom-css-view4'>
+    <!-- <button class='bottom-css-view4-btn' style="background-image: url('http://pa8ytgis2.bkt.clouddn.com/btn_blue_round.png')" bindtap='LoginBtn'>下一步</button> -->
+    <button class='bottom-css-view4-btn' bindtap='GoToAuthenticationNext' wx:if='{{CheckboxChecked==true}}'>下一步</button>
+    <button class='bottom-css-view4-btn-false' wx:else>下一步</button>
+  </view>
+
+
+
+
+
+</view>

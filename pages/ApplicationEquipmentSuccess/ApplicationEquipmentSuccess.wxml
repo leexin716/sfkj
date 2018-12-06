@@ -1,0 +1,14 @@
+<view class='all'>
+  <text class='text1'>订单编号：{{TransactionId}}</text>
+  <text class='text2'>￥{{Money}}.00</text>
+  <view class='all_view1'>
+    <view class='all_view2'>
+      <text class='all_view1_text1'>收款方</text>
+      <text class='all_view1_text2'>亚鼎生物科技</text>
+    </view>
+  </view>
+  <view class='over_button'>
+    <button class='over_buttons' bindtap='Over'>确定</button>
+  </view>
+
+</view>

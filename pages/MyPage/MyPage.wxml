@@ -1,0 +1,124 @@
+<view class='my_page'>
+
+  <view class="top_css">
+    <view class="top_css1">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+      <block wx:else>
+        <view class='user_img_css'>
+          <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}"></image>
+        </view>
+
+        <view class='tap_textview'>
+          <view class='tap_textview_text' wx:if='{{ViewContetnStatus!==1}}'>
+
+            <text class="userinfo-nickname" wx:if="{{UsercompanyName==null}}">{{Phone}}</text>
+            <text class="userinfo-nickname" wx:else>{{UsercompanyName}}</text>
+            <text class="userinfo-nickname">加入时间：{{createDate}}</text>
+            <view class="userinfo-nickname1">
+              <view class="userinfo-nickname1_text" wx:if='{{TopTrue!==0}}'>
+                全国排名：{{Userranking }}
+              </view>
+              <view class="userinfo-nickname1_text" bindtap='GoToApplicationEquipment' wx:else>
+                申请代理
+              </view>
+            </view>
+
+          </view>
+
+
+          <view class='wdl' wx:else>
+            <text class='wdl_text'>
+           未登录
+          </text>
+
+          </view>
+
+        </view>
+
+        <view class='user_img_css1'>
+
+
+          <view class="img-box">
+            <image bindtap="previewImg" mode="scaleToFill" src="{{imagePath}}" wx:if='{{QrCode!==null}}'></image>
+            <!-- <image bindtap="previewImg_btn" mode="scaleToFill" src="http://pa8ytgis2.bkt.clouddn.com/yading_qrcode.png" wx:else></image> -->
+          </view>
+
+          <!-- <image class="userinfo-avatar1" src="{{userInfo.avatarUrl}}"></image> -->
+        </view>
+      </block>
+    </view>
+    <view class='top_css_css1_text'>
+      <text class='top_css_css1_text_textcss' wx:if="{{SurplusOne==null}}">活动设备已租出0台，剩余{{Surplus}}台
+</text>
+
+      <text class='top_css_css1_text_textcss' wx:else>活动设备已租出{{SurplusOne}}台，剩余{{Surplus}}台
+</text>
+
+    </view>
+  </view>
+
+  <view class='middle_css'>
+
+    <view class='middle_cssall' bindtap='GoToMyWallet'>
+      <text class='middle_css_overtext'>我的钱包</text>
+      <text class='middle_css_gettext'>{{UserMoney}}</text>
+      <!-- <text class='middle_css_gettext1'>元</text> -->
+    </view>
+    <!-- 
+    <view class='middle_cssall'>
+      <text class='middle_css_overtext'>我的出货</text>
+      <text class='middle_css_gettext' wx:if="{{OutHuo==null}}">0</text>
+      <text class='middle_css_gettext' wx:else>{{OutHuo}}</text>
+      <text class='middle_css_gettext1'>件</text>
+    </view> -->
+
+
+    <view class='middle_cssall' bindtap='GoToKeHuAdministration' hidden='{{TrueAndFalse}}'>
+      <text class='middle_css_overtext'>客户管理</text>
+      <text class='middle_css_gettext'>{{MyAssistant}}</text>
+      <!-- <text class='middle_css_gettext1'>个</text> -->
+    </view>
+
+    <view class='middle_cssall' bindtap='GoToZhuLi' hidden='{{TrueAndFalse}}'>
+      <text class='middle_css_overtext'>助理管理</text>
+      <text class='middle_css_gettext'>{{MyAssistantCount}}</text>
+      <!-- <text class='middle_css_gettext1'>个</text> -->
+    </view>
+
+    <!-- <view class='middle_cssall' bindtap='GoToMyNews' hidden='{{TrueAndFalse}}' >
+      <text class='middle_css_overtext'>我的消息</text>
+      <text class='middle_css_gettext'>0</text> -->
+    <!-- <text class='middle_css_gettext1'>个</text> -->
+    <!-- </view> -->
+    <!-- <view class='middle_cssall' bindtap='GoToAfterSaleServicePages' hidden='{{TrueAndFalse}}'>
+      <text class='middle_css_overtext'>售后服务</text>
+      <text class='middle_css_gettext'>0</text> -->
+      <!-- <text class='middle_css_gettext1'>个</text> -->
+    <!-- </view> -->
+
+
+
+
+
+
+    <view class='middle_cssall' bindtap='GoToDaiLiGuide'>
+      <text class='middle_css_overtext'>代理指南</text>
+      <!-- <text class='middle_css_gettext'>{{ZhuLi}}</text> -->
+      <!-- <text class='middle_css_gettext1'>个</text> -->
+    </view>
+
+
+    <!-- <view class='middle_cssall' bindtap='GoToXieYiDaliTwo'>
+      <text class='middle_css_overtext_over'>代理指南</text>
+    </view> -->
+
+
+
+  </view>
+
+  <!-- 二维码生成所需canvas画布 -->
+  <view hidden="{{maskHidden}}" class="mask"></view>
+  <view class="canvas-box">
+    <canvas hidden="{{canvasHidden}}" style="width: 686rpx;height: 686rpx;background:#f1f1f1;" canvas-id="mycanvas" />
+  </view>
+</view>

@@ -1,0 +1,120 @@
+.scroll-view-y {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  /* border: 1rpx solid red; */
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*/
+}
+
+.container_view_all {
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  flex-direction: column;
+  border-bottom: solid #ddd 1rpx;
+  /* background: rebeccapurple; */
+  margin-top: 25rpx;
+}
+
+.container_view {
+  width: 100%;
+  height: 160rpx;
+  display: flex;
+  flex-direction: row;
+}
+
+.view_left {
+  width: 70%;
+  height: 100%;
+  /* background: firebrick; */
+  display: flex;
+  flex-direction: column;
+  margin-left: 45rpx;
+}
+
+.view_left_top {
+  display: flex;
+  width: 100%;
+  height: 50%;
+  /* background: darkblue; */
+  align-items: center;
+}
+
+.view_left_top_text {
+  width: 100%;
+  margin-top: 8rpx;
+  /* background: darkcyan; */
+  display: block;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+
+.text1_size {
+  font-size: 30rpx;
+  color: #aaa;
+}
+
+.text2_size {
+  font-size: 28rpx;
+  color: #ccc;
+}
+
+.view_left_bottom {
+  width: 100%;
+  height: 50%;
+  margin-top: 15rpx;
+  /* background: wheat; */
+}
+
+.view_right {
+  width: 30%;
+  height: 100%;
+  /* background: yellow; */
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 35rpx;
+  color: #aaa;
+}
+
+.view_bottom {
+  width: 100%;
+  height: 40%;
+  margin-bottom: 10rpx;
+  /* background: red; */
+  display: flex;
+  flex-direction: row;
+  align-items: center; /*垂直居中*//* justify-content: center;/*水平居中*/
+}
+
+.view_bottom {
+  width: 100%;
+  height: 40%;
+  margin-bottom: 10rpx;
+  /* background: red; */
+}
+
+.view_bottom_text {
+  width: 70%;
+  margin-left: 45rpx;
+}
+
+.view_bottom_text_text {
+  width: 30%;
+  /* background: red; */
+  text-align: center;
+}
+
+.tishi_contetn {
+  width: 100%;
+  height: 250rpx;
+  font-size: 35rpx;
+  color: #ccc;
+  display: flex;
+  flex-direction: column;
+  align-items: center; /*垂直居中*/
+  justify-content: center; /*水平居中*/
+}

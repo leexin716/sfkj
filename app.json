@@ -1,0 +1,73 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/HomePage/HomePage",
+    "pages/AfterSaleService/AfterSaleService",
+    "pages/UserApplicationEquipmentNext/UserApplicationEquipmentNext",
+    "pages/UserApplicationEquipment/UserApplicationEquipment",
+    "pages/MyPage/MyPage",
+    "pages/UserWallet/UserWallet",
+    "pages/Welcome/Welcome",
+    "pages/OrderPage/OrderPage",
+    "pages/DepositDetails/DepositDetails",
+    "pages/PurseDetail/PurseDetail",
+    "pages/Authentication/Authentication",
+    "pages/AuthenticationNext/AuthenticationNext",
+    "pages/MyWallet/MyWallet",
+    "pages/ApplicationEquipment/ApplicationEquipment",
+    "pages/ApplicationEquipmentSuccess/ApplicationEquipmentSuccess",
+    "pages/PutRecharge/PutRecharge",
+    "pages/TiXian/TiXian",
+    "pages/PreviewImgPage/PreviewImgPage",
+    "pages/UserAfterSaleService/UserAfterSaleService",
+    "pages/XieYiDali/XieYiDali",
+    "pages/XieYiDaliTwo/XieYiDaliTwo",
+    "pages/XieYiYongHu/XieYiYongHu",
+    "pages/ZhuLi/ZhuLi",
+    "pages/KeHuAdministration/KeHuAdministration",
+    "pages/DaiLiGuide/DaiLiGuide",
+    "pages/MyNews/MyNews",
+    "pages/AfterSaleServicePages/AfterSaleServicePages",
+    "pages/RulesOfActivit/RulesOfActivit",
+    "pages/EquipmentRepair/EquipmentRepair",
+    "pages/WuLiu/WuLiu",
+    "pages/testJinDuTiao/testJinDuTiao",
+    "pages/testDak/testDak",
+    "pages/testqrdoce/index"
+  ],
+  "window": {
+    "backgroundColor": "#eee",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "waterever",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#aaaaaa",
+    "selectedColor": "#10affe",
+    "backgroundColor": "#ffffff",
+    "borderStyle": "black",
+    "list": [
+      {
+        "pagePath": "pages/HomePage/HomePage",
+        "text": "首页",
+        "iconPath": "images/home.png",
+        "borderStyle": "white",
+        "selectedIconPath": "images/home_pre.png"
+      },
+      {
+        "pagePath": "pages/AfterSaleService/AfterSaleService",
+        "text": "设备",
+        "iconPath": "images/btn_device.png",
+        "borderStyle": "white",
+        "selectedIconPath": "images/btn_device_pre.png"
+      },
+      {
+        "pagePath": "pages/MyPage/MyPage",
+        "text": "我的",
+        "iconPath": "images/btn_mine.png",
+        "selectedIconPath": "images/btn_mine_pre.png"
+      }
+    ]
+  }
+}

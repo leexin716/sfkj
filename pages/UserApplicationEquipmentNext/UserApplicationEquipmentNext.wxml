@@ -1,0 +1,51 @@
+<view class='container'>
+
+
+  <view class='top' style="background-image: url('http://qrcode.waterever.cn/image/money_page_kehu.jpg')">
+  </view>
+
+  <view class='middle'>
+    <!-- radiogroup 布局 -->
+    <!-- <radio-group class='middle_view1_view2_radio_group' bindchange="radioChange" for="{{cartArr.items}}">
+          <label>
+            <radio class='middle_view1_view2_radio1' value="2" checked='true'>微信支付</radio>
+            <radio class='middle_view1_view2_radio2' value="3">钱包支付(可用余额：{{Balance}})</radio>
+          </label>
+        </radio-group> -->
+
+    <view class='middle_view1'>温馨提示</view>
+
+    <view class='middle_view1_2'>用户押金998.00元，租赁年费365.00元/年</view>
+
+    <view class='middle_view1_3'>
+
+    <checkbox-group bindchange='checkboxChange'>
+      <label>
+        <checkbox checked='{{CheckboxChecked}}'>
+        </checkbox>
+      </label>
+    </checkbox-group>
+    同意
+    <text class='xieyi_text' bindtap='xieyi' >《WATEREVER用户协议》</text>
+    
+    </view>
+
+  </view>
+
+
+
+  <view class='bottom'>
+    <view class='bottom_view1'>
+      <text space='ensp'>合计金额：￥{{AllMoney}}.00</text>
+    </view>
+     <view class='bottom_view2' wx:if='{{CheckboxChecked==1}}'>
+      <text bindtap='OverButtpn'>立即付款</text>
+    </view>
+    <view class='bottom_view2s' wx:else>
+      <text bindtap='OverButtpns'>立即付款</text>
+    </view>
+  </view>
+
+
+
+</view>

@@ -1,0 +1,46 @@
+<view class='wuliu-css'>
+
+  <view class='top-css'>
+    <view class='top-css-view'>
+      物流信息
+    </view>
+  </view>
+
+
+
+
+  <scroll-view scroll-y class='scroll-view-y' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+
+    <view class='bottom-css' wx:for='{{WuLiuDataArray}}' wx:key='' wx:for-index="index">
+
+      <view class='bottom-css-view1'>
+
+        <view class='xian-css' wx:if='{{index!=0}}'> </view>
+        <view class='xian-cssboolean' wx:else></view>
+        <view class='xian-imgs-view'>
+
+          <image class='imgs-css' src='{{WuliuPreImgs1}}' wx:if='{{index!=0}}' />
+          <image class='imgs-css' src='{{WuliuPreImgs}}' wx:else/>
+
+        </view>
+
+        <view class='xian-css1'></view>
+
+      </view>
+
+      <view class='bottom-css-view2' wx:if='{{index!=0}}'>
+        <text>{{item.AcceptStation}}</text>
+      </view>
+      <view class='bottom-css-view2-s' wx:else>
+        <text>{{item.AcceptStation}}</text>
+      </view>
+    </view>
+
+  </scroll-view>
+
+
+
+
+
+
+</view>

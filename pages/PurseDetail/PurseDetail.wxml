@@ -1,0 +1,46 @@
+<scroll-view scroll-y class='scroll-view-y' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+
+
+  <view class='container_view_all' wx:for='{{ArrayData}}' wx:key='forkey'>
+    <view class='container_view'>
+      <view class='view_left'>
+        <view class='view_left_top'>
+          <text class='view_left_top_text text1_size'>订单编号： {{item.outTradeNo}}</text>
+        </view>
+        <view class='view_left_bottom'>
+          <text class='view_left_top_text text2_size'>订单时间： {{item.createDate}}</text>
+        </view>
+      </view>
+      <view class='view_right'>
+        <view class='view_left_top'>
+          <text class='view_left_top_text text1_size'>{{item.showBody}}</text>
+        </view>
+        <view class='view_left_bottom'>
+          <text class='view_left_top_text text2_size'>{{item.money}}</text>
+        </view>
+      </view>
+
+    </view>
+    <view class='view_bottom'>
+      <text class='view_bottom_text text2_size' wx:if="{{item.payType==2}}">交易方式：微信</text>
+      <text class='view_bottom_text text2_size' wx:elif="item.payType==3">交易方式：余额</text>
+      <text class='view_bottom_text text2_size' wx:else>交易方式：</text>
+
+
+
+      <view class='view_bottom_text_text text2_size' wx:if='{{item.status==0}}'></view>
+      <view class='view_bottom_text_text text2_size' wx:if='{{item.status==1}}'>交易成功</view>
+    </view>
+  </view>
+
+
+
+<view class='tishi_contetn' hidden='{{ViewHidden}}'>
+暂无信息
+</view>
+
+
+
+
+
+</scroll-view>
