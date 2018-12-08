@@ -12,6 +12,7 @@ Page({
       'http://pj94pq3zn.bkt.clouddn.com/bannerTwo.jpg'
     ],
     isAgent:false
+
   },
 
   /**

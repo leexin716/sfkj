@@ -1,4 +1,10 @@
 <!--pages/AgentActicityDetail/AgentActicityDetail.wxml-->
 <view class='contain'>
   <view class='count'>当前剩余：<text>{{soldout}}</text>台</view>
+  <view class='rankContent'>
+    <view class='rankList' wx:for="{{rankList}}" wx:key='index'>
+      <view class='rankListLeft'>{{index+1}}</view>
+      <view class='rankListRight'><text>{{item.name}}</text><text style='font-size:48rpx;color:#FFD222'>{{item.count}}</text>元</view>
+    </view>
+  </view>
 </view>

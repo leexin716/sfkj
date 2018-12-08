@@ -14,6 +14,36 @@
   text-align: center
 }
 .count text{
-  font-size: 36rpx;
-  color: #FFD222
+  font-size: 48rpx;
+  color: #FFD222;
+  font-weight: bold
+}
+.rankContent{
+  width: 100%;
+  position: absolute;
+  top:1200rpx;
+  color: #fff;
+  font-size: 28rpx
+}
+.rankList{
+  width: 75%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10rpx 0;
+}
+.rankListRight{
+  width: 90%;
+  text-align: left;
+  display: flex;
+  align-items: center;
+  justify-content: space-around
+}
+.rankListLeft{
+  width: 40rpx;
+  height: 40rpx;
+  border:1px solid #fff;
+  border-radius: 50%;
+  text-align: center
 }

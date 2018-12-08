@@ -9,7 +9,7 @@
     <view class='dtButton' wx:if='{{isAgent}}' bindtap='toAgentActivity'>
       <view>
         <view class='dtFontFirst'>DT起航活动进行中</view>
-        <view class='dtFontSecond'>邀请好友购买,实时查看收益</view>
+        <view class='dtFontSecond'>邀请好友购买，实时查看收益</view>
       </view>
     </view>
     <view class='dtButton' wx:else bindtap='toOrdinaryActivity'>
