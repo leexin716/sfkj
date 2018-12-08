@@ -6,7 +6,11 @@ Page({
   data: {
     Notice: '', //公告
     FirsttenData: [], //排行
-    Soldout: ''
+    Soldout: '',
+    imgUrls:[
+      'http://pj94pq3zn.bkt.clouddn.com/bannerOne%20.jpg',
+      'http://pj94pq3zn.bkt.clouddn.com/bannerTwo.jpg'
+    ]
   },
 
   /**
@@ -37,7 +41,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-
+    console.log(getApp())
     
     var that = this;
 

@@ -1,126 +1,13 @@
-<view class='homepages' style="background-image: url('http://qrcode.waterever.cn/image/yading_home_img3.jpg')">
-
-  <view class='top'>
-    <view class='top_view1'>
-      <!-- <image class='top_view1_img' src='http://qrcode.waterever.cn/image/yading.png' /> -->
-      <view class='top_view_view1'>
-        <text class='top_view_view1_text' bindtap='GoToRulesOfActivity'>活动规则</text>
-      </view>
-
-      <view class='top_text_text1'>
-          <image class='top_text_text1_img' src='http://qrcode.waterever.cn/image/home_horn_img.png' />
-          <text class='top_text_text2_text'>"{{Notice}}"</text>
-        </view>
+<view class='contian'>
+    <swiper  autoplay="true" interval="3000" indicator-dots="true" indicator-active-color="#fff" style='height:350rpx'>
+      <block wx:for="{{imgUrls}}" wx:key="index">
+        <swiper-item>
+          <image src="{{item}}" class="slide-image" style='width:100%;height:100%'/>
+        </swiper-item>
+      </block>
+    </swiper>
+    <view class='dtButton'>
+      <view class='dtFontFirst'>DT起航活动进行中</view>
+      <view>邀请好友购买,实时查看收益</view>
     </view>
-    <view class='top_text'>
-      <view class='top_text_top_two_two'>
-       
-        <view class='top_text_text2_two'>
-          首批活动数量
-          <text class='colorss'>20000</text> 台, 当前剩余
-          <text class='colorss'>{{Soldout}}</text> 
-          台
-        </view>
-      </view>
-    </view>
-  </view> 
-<scroll-view scroll-y="true" style="height: 126px">
-        <view class='middle_view2_view_text'>
-          <view class='middle_view2_view_text_title'>
-            <view class='middle_view2_view_text_title_text'>1</view>
-          </view>
-          <view class='middle_view2_view_text_content'>
-            <text class='middle_view2_view_text_text2'>{{FirsttenData[0]}}</text>
-          </view>
-        </view>
-
-
-        <view class='middle_view2_view_text'>
-          <view class='middle_view2_view_text_title'>
-            <view class='middle_view2_view_text_title_text'>2</view>
-          </view>
-          <view class='middle_view2_view_text_content'>
-            <text class='middle_view2_view_text_text2'>{{FirsttenData[1]}}</text>
-          </view>
-        </view>
-
-
-        <view class='middle_view2_view_text'>
-          <view class='middle_view2_view_text_title'>
-            <view class='middle_view2_view_text_title_text'>3</view>
-          </view>
-          <view class='middle_view2_view_text_content'>
-            <text class='middle_view2_view_text_text2'>{{FirsttenData[2]}}</text>
-          </view>
-        </view>
-
-
-        <view class='middle_view2_view_text'>
-          <view class='middle_view2_view_text_title'>
-            <view class='middle_view2_view_text_title_text '>4</view>
-          </view>
-          <view class='middle_view2_view_text_content'>
-            <text class='middle_view2_view_text_text2 '>{{FirsttenData[3]}}</text>
-          </view>
-        </view>
-
-       
-
-        <view class='middle_view2_view_text'>
-          <view class='middle_view2_view_text_title'>
-            <view class='middle_view2_view_text_title_text'>5</view>
-          </view>
-          <view class='middle_view2_view_text_content'>
-            <text class='middle_view2_view_text_text2'>{{FirsttenData[4]}}</text>
-          </view>
-        </view>
-
-        <view class='middle_view2_view_text'>
-          <view class='middle_view2_view_text_title'>
-            <view class='middle_view2_view_text_title_text'>6</view>
-          </view>
-          <view class='middle_view2_view_text_content'>
-            <text class='middle_view2_view_text_text2'>{{FirsttenData[5]}}</text>
-          </view>
-        </view>
-
-        <view class='middle_view2_view_text'>
-          <view class='middle_view2_view_text_title'>
-            <view class='middle_view2_view_text_title_text'>7</view>
-          </view>
-          <view class='middle_view2_view_text_content'>
-            <text class='middle_view2_view_text_text2'>{{FirsttenData[6]}}</text>
-          </view>
-        </view>
-        <view class='middle_view2_view_text'>
-          <view class='middle_view2_view_text_title'>
-            <view class='middle_view2_view_text_title_text'>8</view>
-          </view>
-          <view class='middle_view2_view_text_content'>
-            <text class='middle_view2_view_text_text2'>{{FirsttenData[7]}}</text>
-          </view>
-        </view>
-       <view class='middle_view2_view_text'>
-          <view class='middle_view2_view_text_title'>
-            <view class='middle_view2_view_text_title_text'>9</view>
-          </view>
-          <view class='middle_view2_view_text_content'>
-            <text class='middle_view2_view_text_text2'>{{FirsttenData[8]}}</text>
-          </view>
-        </view>
-</scroll-view>
-
-
-
-
-
-
-
-
-
-
-
-  <view class='bottom'>
-
-  </view>
 </view>
