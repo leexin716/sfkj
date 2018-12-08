@@ -1,0 +1,4 @@
+<!--pages/AgentActicityDetail/AgentActicityDetail.wxml-->
+<view class='contain'>
+  <view class='count'>当前剩余：<text>{{soldout}}</text>台</view>
+</view>

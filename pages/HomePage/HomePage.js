@@ -10,7 +10,8 @@ Page({
     imgUrls:[
       'http://pj94pq3zn.bkt.clouddn.com/bannerOne%20.jpg',
       'http://pj94pq3zn.bkt.clouddn.com/bannerTwo.jpg'
-    ]
+    ],
+    isAgent:false
   },
 
   /**
@@ -70,7 +71,10 @@ Page({
 
       // getApp().globalData.User_Above_ID = a[0]
       // getApp().globalData.User_Aid_ID = a[1]
+
+      
     } else {
+      
       console.log(123);
     }
 
@@ -157,11 +161,14 @@ Page({
           },
           success: function (res) {
             wx.hideLoading();
-            console.log(res)
+            console.log('getuserInfo'+JSON.stringify(res))
             // 存储注册需要使用的key
             getApp().globalData.HomePageData = res.data.data
             getApp().globalData.UserStatus = res.data.status
             if (res.data.status == 3100) { //新代理商
+              that.setData({
+                isAgent: true
+              })
               // getApp().globalData.token = res.data.data.token
               // getApp().globalData.UserId = res.data.data.user.id
               // getApp().globalData.HomeTokenHttpStatus = 1
@@ -177,7 +184,9 @@ Page({
                 })
               }
             } else if (res.data.status == 3101) { //老代理商
-
+              that.setData({
+                isAgent: true
+              })
               getApp().globalData.token = res.data.data.token
               getApp().globalData.UserId = res.data.data.user.id
 
@@ -321,9 +330,23 @@ Page({
     wx.navigateTo({
       url: '../RulesOfActivit/RulesOfActivit',
     })
+  },
+  //产品详情
+  toDetail(){
+    wx.navigateTo({
+      url: '../ProductDetail/ProductDetail',
+    })
+  },
+  //代理商进入详情
+  toAgentActivity(){
+    wx.navigateTo({
+      url: '../AgentActicityDetail/AgentActicityDetail?Soldout=' + this.data.Soldout,
+    })
+  },
+  //非代理商进入详情
+  toOrdinaryActivity(){
+
   }
-
-
 
 
 })

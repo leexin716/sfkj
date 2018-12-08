@@ -33,14 +33,16 @@
     "pages/WuLiu/WuLiu",
     "pages/testJinDuTiao/testJinDuTiao",
     "pages/testDak/testDak",
-    "pages/testqrdoce/index"
+    "pages/testqrdoce/index",
+    "pages/ProductDetail/ProductDetail",
+    "pages/AgentActicityDetail/AgentActicityDetail"
   ],
   "window": {
     "backgroundColor": "#eee",
     "backgroundTextStyle": "light",
-    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarBackgroundColor": "#4E89D2",
     "navigationBarTitleText": "waterever",
-    "navigationBarTextStyle": "black"
+    "navigationBarTextStyle": "white"
   },
   "tabBar": {
     "color": "#aaaaaa",

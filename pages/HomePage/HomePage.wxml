@@ -2,12 +2,23 @@
     <swiper  autoplay="true" interval="3000" indicator-dots="true" indicator-active-color="#fff" style='height:350rpx'>
       <block wx:for="{{imgUrls}}" wx:key="index">
         <swiper-item>
-          <image src="{{item}}" class="slide-image" style='width:100%;height:100%'/>
+          <image src="{{item}}" class="slide-image" style='width:100%;height:100%' bindtap='toDetail' />
         </swiper-item>
       </block>
     </swiper>
-    <view class='dtButton'>
-      <view class='dtFontFirst'>DT起航活动进行中</view>
-      <view>邀请好友购买,实时查看收益</view>
+    <view class='dtButton' wx:if='{{isAgent}}' bindtap='toAgentActivity'>
+      <view>
+        <view class='dtFontFirst'>DT起航活动进行中</view>
+        <view class='dtFontSecond'>邀请好友购买,实时查看收益</view>
+      </view>
+    </view>
+    <view class='dtButton' wx:else bindtap='toOrdinaryActivity'>
+      <view>
+        <view class='dtFontFirst'>DT起航活动进行中</view>
+        <view class='dtFontSecond'>加入我们合伙人，坐享收益</view>
+      </view>
+    </view>
+    <view class='isVideo'>
+      <video class='isVideo' src='http://pj94pq3zn.bkt.clouddn.com/d2317192a245c440b240159afc1bcbf8.mp4'></video>
     </view>
 </view>
