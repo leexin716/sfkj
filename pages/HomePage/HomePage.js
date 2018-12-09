@@ -8,11 +8,11 @@ Page({
     FirsttenData: [], //排行
     Soldout: '',
     imgUrls:[
-      'http://pj94pq3zn.bkt.clouddn.com/bannerOne%20.jpg',
-      'http://pj94pq3zn.bkt.clouddn.com/bannerTwo.jpg'
+      'http://pj94pq3zn.bkt.clouddn.com/homeBanner1.png',
+      'http://pj94pq3zn.bkt.clouddn.com/homeBanner2.png'
     ],
-    isAgent:false
-
+    isAgent:false,
+    apply:true
   },
 
   /**
@@ -22,7 +22,7 @@ Page({
     wx.getStorage({
       key: 'UserCode',
       success: function (res) {
-        console.log("=====UserCode=======" + res.data);
+        // console.log("=====UserCode=======" + res.data);
       },
     })
 
@@ -31,8 +31,8 @@ Page({
       title: '加载中',
     })
 
-    console.log("getApp().globalData.HomeTokenHttpStatus=======" + getApp().globalData.HomeTokenHttpStatus)
-    console.log(" getApp().globalData.token====" + getApp().globalData.token)
+    // console.log("getApp().globalData.HomeTokenHttpStatus=======" + getApp().globalData.HomeTokenHttpStatus)
+    // console.log(" getApp().globalData.token====" + getApp().globalData.token)
     if (getApp().globalData.HomeTokenHttpStatus == 1) { //刷新首页
       this.GetHomePageData();
     }
@@ -43,7 +43,7 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(getApp())
+    // console.log(getApp())
     
     var that = this;
 
@@ -51,13 +51,13 @@ Page({
     if (options.q !== undefined) {
       var scan_url = decodeURIComponent(options.q);
       // http://qrcode.waterever.cn/wxqrcode?id=1144&aid=1   //助理
-      console.log("============" + scan_url);
+      // console.log("============" + scan_url);
       var Above_ID = scan_url.replace('http://qrcode.waterever.cn/wxqrcode?id=', '')
       // console.log("=======扫码截取结果======" + Above_ID);
       var a = Above_ID.split("&aid=");
-      console.log("=======扫码截取结果长度======" + a.length);
-      console.log("=======扫码截取结果======" + a[0]);
-      console.log("=======扫码截取结果======" + a[1]);
+      // console.log("=======扫码截取结果长度======" + a.length);
+      // console.log("=======扫码截取结果======" + a[0]);
+      // console.log("=======扫码截取结果======" + a[1]);
       //  var  TestID=
       if (a.length == 1) {
         getApp().globalData.User_Above_ID = a[0]
@@ -66,8 +66,8 @@ Page({
         getApp().globalData.User_Above_ID = a[0]
         getApp().globalData.User_Aid_ID = a[1]
       } else { }
-      console.log("=======getApp().globalData.User_Above_ID======" + getApp().globalData.User_Above_ID)
-      console.log("=======getApp().globalData.User_Aid_ID======" + getApp().globalData.User_Aid_ID)
+      // console.log("=======getApp().globalData.User_Above_ID======" + getApp().globalData.User_Above_ID)
+      // console.log("=======getApp().globalData.User_Aid_ID======" + getApp().globalData.User_Aid_ID)
 
 
       // getApp().globalData.User_Above_ID = a[0]
@@ -76,7 +76,7 @@ Page({
       
     } else {
       
-      console.log(123);
+      // console.log(123);
     }
 
 
@@ -90,19 +90,19 @@ Page({
       wx.getSetting({
         success: function (res) {
           if (res.authSetting['scope.userInfo']) {
-            console.log("已经授权，直接调用 GetUserInfo()函数 获取头像信息")
+            // console.log("已经授权，直接调用 GetUserInfo()函数 获取头像信息")
 
 
             that.GetUserInfo();
           } else {
             wx.hideLoading();
             wx.hideNavigationBarLoading()
-            console.log('调起授权弹框')
+            // console.log('调起授权弹框')
             wx.authorize({
               scope: 'scope.userInfo',
               success() {
                 // 授权成功
-                console.log("授权成功,调用 GetUserInfo()函数 获取头像信息")
+                //console.log("授权成功,调用 GetUserInfo()函数 获取头像信息")
                 that.GetUserInfo();
               },
               // 授权失败
@@ -113,12 +113,12 @@ Page({
                   content: '尚未进行授权，无法正常使用小程序，请进行授权。',
                   success: function (res) {
                     if (res.confirm) {
-                      console.log('用户点击确定')
+                      //console.log('用户点击确定')
                       wx.redirectTo({
                         url: '../Welcome/Welcome',
                       })
                     } else if (res.cancel) {
-                      console.log('用户点击取消')
+                      //console.log('用户点击取消')
                       wx.redirectTo({
                         url: '../Welcome/Welcome',
                       })
@@ -139,13 +139,13 @@ Page({
     var that = this;
     wx.getUserInfo({
       success: function (res) {
-        console.log(res)
-        console.log("-------code---------" + getApp().globalData.logincode)
-        console.log("------ encryptedData --------" + res.encryptedData)
-        console.log("------ iv ------" + res.iv)
-        console.log("------ Above_ID ------" + getApp().globalData.User_Above_ID)
-        console.log("------ Aid_ID ------" + getApp().globalData.User_Aid_ID)
-        console.log("登录是获取的" + getApp().globalData.logincode)
+        // console.log(res)
+        // console.log("-------code---------" + getApp().globalData.logincode)
+        // console.log("------ encryptedData --------" + res.encryptedData)
+        // console.log("------ iv ------" + res.iv)
+        // console.log("------ Above_ID ------" + getApp().globalData.User_Above_ID)
+        // console.log("------ Aid_ID ------" + getApp().globalData.User_Aid_ID)
+        // console.log("登录是获取的" + getApp().globalData.logincode)
         wx.request({
           url: 'https://japi.waterever.cn/user/get_union_id',
           header: {
@@ -161,8 +161,9 @@ Page({
             assistant_id: getApp().globalData.User_Aid_ID
           },
           success: function (res) {
+            console.log(res.data)
             wx.hideLoading();
-            console.log('getuserInfo'+JSON.stringify(res))
+            // console.log('getuserInfo'+JSON.stringify(res))
             // 存储注册需要使用的key
             getApp().globalData.HomePageData = res.data.data
             getApp().globalData.UserStatus = res.data.status
@@ -170,6 +171,7 @@ Page({
               that.setData({
                 isAgent: true
               })
+              getApp().globalData.oldAgent = true
               // getApp().globalData.token = res.data.data.token
               // getApp().globalData.UserId = res.data.data.user.id
               // getApp().globalData.HomeTokenHttpStatus = 1
@@ -177,9 +179,9 @@ Page({
                 wx.redirectTo({
                   url: '../Authentication/Authentication',
                 })
-                console.log("------ ssssssssssssssssss_ID ------" + getApp().globalData.User_Above_ID)
+                // console.log("------ ssssssssssssssssss_ID ------" + getApp().globalData.User_Above_ID)
               } else {
-                console.log("------ aaaaaaaaaaaaaaaa_ID ------" + getApp().globalData.User_Above_ID)
+                // console.log("------ aaaaaaaaaaaaaaaa_ID ------" + getApp().globalData.User_Above_ID)
                 wx.redirectTo({
                   url: '../Authentication/Authentication',
                 })
@@ -188,6 +190,7 @@ Page({
               that.setData({
                 isAgent: true
               })
+              getApp().globalData.oldAgent = true
               getApp().globalData.token = res.data.data.token
               getApp().globalData.UserId = res.data.data.user.id
 
@@ -227,6 +230,10 @@ Page({
               wx.switchTab({
                 url: '../MyPage/MyPage'
               })
+            }else{
+              that.setData({
+                apply: false
+              })
             }
           }
 
@@ -262,7 +269,9 @@ Page({
    * 页面相关事件处理函数--监听用户下拉动作
    */
   onPullDownRefresh: function () {
-
+    setTimeout(() => {
+      wx.stopPullDownRefresh()
+    },1000)
   },
 
   /**
@@ -311,9 +320,9 @@ Page({
       },
       success: function (res) {
         wx.hideLoading();
-        console.log(res)
-        console.log("4564545454544556")
-        console.log(res.data.data.message)
+        // console.log(res)
+        // console.log("4564545454544556")
+        // console.log(res.data.data.message)
 
         that.setData({
           FirsttenData: res.data.data.firstten,
@@ -346,7 +355,9 @@ Page({
   },
   //非代理商进入详情
   toOrdinaryActivity(){
-
+    wx.navigateTo({
+      url: '../UserActivityDetail/UserActivityDetail?apply=' + this.data.apply,
+    })
   }
 
 

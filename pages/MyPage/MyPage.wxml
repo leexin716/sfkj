@@ -47,12 +47,11 @@
         </view>
       </block>
     </view>
-    <view class='top_css_css1_text'>
+    <view class='top_css_css1_text' wx:if="{{isAgent}}">
       <text class='top_css_css1_text_textcss' wx:if="{{SurplusOne==null}}">活动设备已租出0台，剩余{{Surplus}}台
 </text>
 
-      <text class='top_css_css1_text_textcss' wx:else>活动设备已租出{{SurplusOne}}台，剩余{{Surplus}}台
-</text>
+      <text class='top_css_css1_text_textcss'>活动设备已租出{{SurplusOne}}台，剩余{{Surplus}}台</text>
 
     </view>
   </view>

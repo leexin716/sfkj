@@ -1,6 +1,12 @@
 page{
   background: #4E89D2;
 }
+.backBtn{
+  padding: 40rpx 0;
+}
+.agentBtn{
+  text-align: center;
+}
 .dtButton{
   width: 90%;
   height: 180rpx;
@@ -26,7 +32,7 @@ page{
   /* border-radius: 30rpx; */
   height: 350rpx;
   margin: auto;
-  margin-top: 30rpx;
+  /* margin-top: 30rpx; */
 }
 .isVideo video{
   width: 100%;

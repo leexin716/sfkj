@@ -10,7 +10,9 @@ Page({
       {
         name:'2'
       }
-    ]
+    ],
+    lookBtn:false,
+    lookList:[]
   },
   onLoad: function (options) {
     this.setData({
@@ -18,9 +20,7 @@ Page({
     })
     this.listLoad()
   },
-  onReady: function () {
-
-  },
+  //获取排行榜
   listLoad(){
     let that = this;
     wx.request({
@@ -35,19 +35,34 @@ Page({
       },
       success: function (res) {
         if(res.data.code == 0){
-          let list = res.data.data.firstten
+          let list = res.data.data.firstten;
           let arry = []
-          for (let i = 0; i < list.length;i++){
+          for (let i = 0; i < list.length; i++) {
             arry.push({
               name: list[i].split("：")[0],
               count: list[i].split("：")[1]
             })
           }
+          that.setData({ lookList: arry })
+          if (list.length > 3){
+            that.setData({ lookBtn:true})
+            arry.length = 3
+          }
           that.setData({
             rankList: arry
           })
+          // console.log(that.data.lookList)
+          // console.log(that.data.rankList)
         }
       }
     })
+  },
+  //查看更多
+  lookBtnFn(){
+    let that = this;
+    that.setData({
+      lookBtn: false,
+      rankList: that.data.lookList
+    });
   }
 })

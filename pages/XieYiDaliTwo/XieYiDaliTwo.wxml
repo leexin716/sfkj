@@ -1,4 +1,5 @@
 <scroll-view scroll-y class='scroll-view-y' bindscrolltoupper="upper" bindscrolltolower="lower" bindscroll="scroll" scroll-top="{{scrollTop}}">
+  <view style='padding:20rpx'>
   <view class='Title1'>《“Waterever”DT代理活动协议》
   </view>
 
@@ -473,5 +474,6 @@
         20.3 waterever小程序在合法的情况下拥有以上条款的最终解释权。
       </view>
     </view>
+  </view>
   </view>
 </scroll-view>

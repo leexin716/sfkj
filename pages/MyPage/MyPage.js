@@ -34,15 +34,19 @@ Page({
     TopTrue: 0,
     MyAssistantCount: '',
     TrueAndFalse: false, //用于判断是页面数据是用户信息还是代理信息
-
+    isAgent:false
   },
   //顶部信息点击事件
   bindViewTap: function() {
-    console.log("头像点击事件")
+    // console.log("头像点击事件")
   },
   onShow: function() {
 
-    console.log("我的页面显示")
+    this.setData({
+      isAgent: getApp().globalData.oldAgent
+    })
+    console.log(this.data.isAgent)
+    // console.log("我的页面显示")
 
     this.GetUserImgName(); //获取用户微信头像
 
@@ -117,7 +121,7 @@ Page({
       size.h = height;
     } catch (e) {
       // Do something when catch error
-      console.log("获取设备信息失败" + e);
+      // console.log("获取设备信息失败" + e);
     }
     return size;
   },
@@ -136,14 +140,14 @@ Page({
       canvasId: 'mycanvas',
       success: function(res) {
         var tempFilePath = res.tempFilePath;
-        console.log(tempFilePath);
+        // console.log(tempFilePath);
         that.setData({
           imagePath: tempFilePath,
           // canvasHidden:true
         });
       },
       fail: function(res) {
-        console.log(res);
+        // console.log(res);
       }
     });
   },
@@ -178,6 +182,7 @@ Page({
 
   // 进入代理商进货支付页面
   GoToApplicationEquipment: function() {
+    console.log(getApp().globalData.UserStatus)
     if (getApp().globalData.UserStatus == 3100) {
       wx.redirectTo({
         url: '../Authentication/Authentication',
@@ -212,9 +217,9 @@ Page({
     wx.showLoading({
       title: '加载中',
     })
-    console.log("getApp().globalData.UserId=========" + getApp().globalData.UserId +
-      "getApp().globalData.token=============" + getApp().globalData.token +
-      "getApp().globalData.UserStatus=============" + getApp().globalData.UserStatus)
+    // console.log("getApp().globalData.UserId=========" + getApp().globalData.UserId +
+    //   "getApp().globalData.token=============" + getApp().globalData.token +
+    //   "getApp().globalData.UserStatus=============" + getApp().globalData.UserStatus)
     var that = this;
 
 
@@ -264,9 +269,9 @@ Page({
         },
         success: function(res) {
         
-          console.log(res)
-          console.log(res.data.data.balance)
-          console.log("===========二维码地址===========" + res.data.data.qrcode)
+          // console.log(res)
+          // console.log(res.data.data.balance)
+          // console.log("===========二维码地址===========" + res.data.data.qrcode)
           if(res.data.code==0){
             that.setData({
               UserMoney: res.data.data.balance,

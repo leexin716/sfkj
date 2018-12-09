@@ -6,16 +6,22 @@
         </swiper-item>
       </block>
     </swiper>
-    <view class='dtButton' wx:if='{{isAgent}}' bindtap='toAgentActivity'>
-      <view>
-        <view class='dtFontFirst'>DT起航活动进行中</view>
-        <view class='dtFontSecond'>邀请好友购买，实时查看收益</view>
+    <view class='backBtn'>
+      <!-- <view class='dtButton' wx:if='{{isAgent}}' bindtap='toAgentActivity'>
+        <view>
+          <view class='dtFontFirst'>DT起航活动进行中</view>
+          <view class='dtFontSecond'>邀请好友购买，实时查看收益</view>
+        </view>
       </view>
-    </view>
-    <view class='dtButton' wx:else bindtap='toOrdinaryActivity'>
-      <view>
-        <view class='dtFontFirst'>DT起航活动进行中</view>
-        <view class='dtFontSecond'>加入我们合伙人，坐享收益</view>
+      <view class='dtButton' wx:else bindtap='toOrdinaryActivity'>
+        <view>
+          <view class='dtFontFirst'>DT起航活动进行中</view>
+          <view class='dtFontSecond'>加入我们合伙人，坐享收益</view>
+        </view>
+      </view> -->
+      <view class='agentBtn'>
+        <image src='../../images/agentBtn.png' mode='widthFix' wx:if='{{isAgent}}' bindtap='toAgentActivity'></image>
+        <image src='../../images/userBtn.png' mode='widthFix' wx:else bindtap='toOrdinaryActivity'></image>
       </view>
     </view>
     <view class='isVideo'>

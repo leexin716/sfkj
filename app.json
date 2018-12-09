@@ -35,7 +35,8 @@
     "pages/testDak/testDak",
     "pages/testqrdoce/index",
     "pages/ProductDetail/ProductDetail",
-    "pages/AgentActicityDetail/AgentActicityDetail"
+    "pages/AgentActicityDetail/AgentActicityDetail",
+    "pages/UserActivityDetail/UserActivityDetail"
   ],
   "window": {
     "backgroundColor": "#eee",

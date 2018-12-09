@@ -1,4 +1,4 @@
-// pages/AgentActicityDetail/HomePage.js
+// pages/MyPage/HomePage.js
 Page({
 
   /**

@@ -13,7 +13,7 @@
     <view class='middle_view1_4'>
 
 
-      <view  class='middle_view1_4_1'>
+      <view class='middle_view1_4_1'>
         <!-- radiogroup 布局 -->
         支付方式：
         <radio-group class='middle_view1_view2_radio_group' bindchange="radioChange" for="{{cartArr.items}}">

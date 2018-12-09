@@ -1,0 +1,44 @@
+<!--pages/UserActivityDetail/UserActivityDetail.wxml-->
+<view class='contaiin'>
+  <view class='userBack'>
+    <image src='../../images/userBack.jpg' mode='widthFix'></image>
+    <view class='fastApply' wx:if="{{apply}}" bindtap='applyFn'>立即申请</view>
+  </view>
+  <view class='institution'>活动奖励制度</view>
+  <view class='gifter'>
+    <image src='../../images/giftOne.png' mode='widthFix'></image>
+    <image src='../../images/giftTwo.png' mode='widthFix'></image>
+    <image src='../../images/giftThree.png' mode='widthFix'></image>
+  </view>
+  <view class='process'>
+    <view class='title'><text></text>活动流程<text></text></view>
+    <view class='processImage'>
+      <view class='bank'>
+        <image src='../../images/bank.png' mode='widthFix'></image>
+        <view><text>参与活动\n缴纳押金</text></view>
+      </view>
+      <view class='arrowRight'></view>
+      <view class='scan'>
+        <image src='../../images/scan.png' mode='widthFix'></image>
+        <view><text>好友扫描您的专\n属二维码购买商品</text></view>
+      </view>
+      <view class='arrowRight'></view>
+      <view class='money'>
+        <image src='../../images/money.png' mode='widthFix'></image>
+        <view><text>获取丰厚奖金</text></view>
+      </view>
+    </view>
+  </view>
+  <!-- 活动规则 -->
+  <!-- <view class='ruleFont'>
+    <view class='title'><text></text>活动规则<text></text></view>
+    <view class='ruleFonter'>1、成为代理商须缴纳9980元的设备代理押金,可线上微信支付,以成功支付为准,活动结束后押金退回(公司打款到代理商-我的钱包,钱包可申请提现到个人微信零钱钱包)；</view>
+    <view class='ruleFonter'>2、代理商可以用自己的二维码发展净水器用户(扫二维码跳转到小程序申请租赁净水器新机),所发展的用户都可在代理商个人中心的客户管理中查看；</view>
+    <view class='ruleFonter'>3、代理商可以产生专属自己的不同代理二维码,让亲朋参与拓展用户,所发展的用户数一并计入代理商的销售数；</view>
+    <view class='ruleFonter'>4、代理商的奖金及佣金一并打入代理商的个人中心-钱包,可实时查看(用户申请净水器新机并成功支付,用户退货退款会产生并扣取一定的费用,详见用户协议)并可申请提现；</view>
+    <view class='ruleFonter'>5、代理商佣金比例:第1、2年,用户设备的租赁年费的70%;第3、4年用户设备的租赁年费的50%;第5、6年,用户设备的租赁年费的30%;第7年,用户设备的和赁年费的10%；</view>
+    <view class='ruleFonter'>6、用户申请新机成功后,安装、移机、保修等售后均由公司负责,与代理商无关; </view>
+    <view class='ruleFonter'>7、活动结束后,排名前10的代理商可申请成为城市合伙人,享受公司更大的代理优惠政策及未来上市收益; </view>
+    <view class='ruleFonter'>8、本活动规则最终解释权归公司所有。</view>
+  </view> -->
+</view>

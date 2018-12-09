@@ -1,0 +1,99 @@
+/* pages/UserActivityDetail/UserActivityDetail.wxss */
+page{
+  background: #4f8aee
+}
+.contaiin{
+  padding-bottom: 40rpx;
+}
+.userBack image{
+  width: 100%
+}
+.userBack{
+  position: relative
+}
+.fastApply{
+  width: 80%;
+  background: #f5d648;
+  line-height: 80rpx;
+  margin: auto;
+  text-align: center;
+  border-radius: 60rpx;
+  color: #7e4a0e;
+  font-weight: bold;
+  position: absolute;
+  bottom: 0;
+  left: 10%
+}
+.institution{
+  color: #fff;
+  text-align: center;
+  padding-top:30rpx;
+  font-size: 28rpx; 
+}
+.gifter{
+  text-align: center
+}
+.process{
+  background: #3775e2;
+  width: 90%;
+  color: #fff;
+  margin: 30rpx auto;
+  padding: 20rpx;
+}
+.title{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: 32rpx;
+  font-weight: bold;
+  color: #fff;
+  padding-bottom: 10rpx;
+}
+.title text{
+  width: 190rpx;
+  height: 1px;
+  background: #fff;
+  display: inline-block
+}
+.processImage{
+  display: flex;
+  justify-content: space-around;
+  font-size: 24rpx;
+  padding-top: 20rpx;
+}
+.bank{
+  text-align: center
+}
+.bank image{
+  width: 100rpx
+}
+.scan{
+  text-align: center;
+}
+.scan image{
+  width: 80rpx;
+  padding: 10rpx 0;
+}
+.money{
+  text-align: center
+}
+.money image{
+  width: 90rpx;
+  padding: 10rpx 0;
+}
+.arrowRight{
+  width:0; 
+  height:0; 
+  border-top:8px solid transparent;
+  border-bottom: 8px solid transparent;
+  border-left: 10px solid #a4c7f3;
+  margin-top: 40rpx
+}
+.ruleFont{
+  padding: 20rpx 40rpx 40rpx 20rpx;
+  font-size: 28rpx;
+  color: #fff
+}
+.ruleFonter{
+  padding: 10rpx 0;
+}

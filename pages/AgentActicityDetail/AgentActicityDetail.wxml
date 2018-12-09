@@ -1,10 +1,18 @@
 <!--pages/AgentActicityDetail/AgentActicityDetail.wxml-->
 <view class='contain'>
-  <view class='count'>当前剩余：<text>{{soldout}}</text>台</view>
-  <view class='rankContent'>
-    <view class='rankList' wx:for="{{rankList}}" wx:key='index'>
-      <view class='rankListLeft'>{{index+1}}</view>
-      <view class='rankListRight'><text>{{item.name}}</text><text style='font-size:48rpx;color:#FFD222'>{{item.count}}</text>元</view>
+  <view class='imageRank'>
+    <image src='../../images/agentdetail.jpg' mode='widthFix' style='width:100%'></image>
+    <view class='count'>当前剩余：<text>{{soldout}}</text>台</view>
+  </view>
+  <view style='padding:100rpx 0'>
+    <view class='rankContent'>
+      <image src='../../images/ranklist.png' style='width:600rpx;height:120rpx'></image>
+      <view class='rankFont'>当前排行榜</view>
+      <view class='rankList' wx:for="{{rankList}}" wx:key='index'>
+        <view class='rankListLeft'>{{index+1}}</view>
+        <view class='rankListRight'><text>{{item.name}}</text><text style='font-size:48rpx;color:#FFD222'>{{item.count}}</text>元</view>
+      </view>
+      <view class='lookBtn' wx:if='{{lookBtn}}' bindtap='lookBtnFn'>查看更多</view>
     </view>
   </view>
 </view>

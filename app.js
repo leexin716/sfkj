@@ -17,10 +17,10 @@ App({
       success: function(res) {
         // console.log(res)
         if (res.code) {
-          console.log('登录成功！' + res.code)
+          // console.log('登录成功！' + res.code)
           getApp().globalData.logincode = res.code;
         } else {
-          console.log('登录失败！' + res.errMsg)
+          // console.log('登录失败！' + res.errMsg)
         }
       }
     });
@@ -33,7 +33,7 @@ App({
     // 主动检测版本更新
     updateManager.onCheckForUpdate(function(res) {
       // 请求完新版本信息的回调
-      console.log("是否有新版本====" + res.hasUpdate)
+      // console.log("是否有新版本====" + res.hasUpdate)
     })
     updateManager.onUpdateReady(function() {
       wx.showModal({
@@ -68,6 +68,7 @@ App({
       UserStatus: '',
       UserPageType: 0,
       XqOrderId: -1,
+      oldAgent:false
     }
   }
 
