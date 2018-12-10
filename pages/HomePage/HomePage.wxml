@@ -1,5 +1,5 @@
 <view class='contian'>
-    <swiper  autoplay="true" interval="3000" indicator-dots="true" indicator-active-color="#fff" style='height:350rpx'>
+    <swiper  autoplay="true" interval="3000" indicator-dots="true" indicator-active-color="#fff" style='height:550rpx'>
       <block wx:for="{{imgUrls}}" wx:key="index">
         <swiper-item>
           <image src="{{item}}" class="slide-image" style='width:100%;height:100%' bindtap='toDetail' />
