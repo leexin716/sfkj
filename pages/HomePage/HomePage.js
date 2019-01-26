@@ -1,3 +1,5 @@
+
+
 Page({
 
   /**
@@ -8,8 +10,8 @@ Page({
     FirsttenData: [], //排行
     Soldout: '',
     imgUrls:[
-      'http://pj94pq3zn.bkt.clouddn.com/homeBanner1.png',
-      'http://pj94pq3zn.bkt.clouddn.com/homeBanner2.png'
+      'http://pkhotk7ch.bkt.clouddn.com/bannerOne.png',
+      'http://pkhotk7ch.bkt.clouddn.com/bannerTwo.png'
     ],
     isAgent:false,
     apply:true
